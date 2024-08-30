@@ -1,0 +1,58 @@
+html {
+	font-size: 22px;
+}
+
+body {
+	background-color: #333;
+	color: whitesmoke;
+}
+
+a:link {
+	color: palegreen;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: seagreen;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: palevioletred;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:active {
+	color: palevioletred;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+#Mark-07 {
+	background-color: azure;
+}
+
+#rickroll {
+	font-size: 22px;
+	background-color: #222;
+	border: 2px solid whitesmoke;
+	border-radius: 15px;
+	color: whitesmoke;
+}
+
+#showdiv{
+	border: 1px solid whitesmoke;
+	background-color: #222;
+	padding: 0.5rem;
+}
+
+.highlight{
+	color: royalblue;
+}
+
+/* #hidden{
+	visibility: hidden;
+} */
