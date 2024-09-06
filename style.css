@@ -53,6 +53,19 @@ a:active {
 	color: royalblue;
 }
 
-/* #hidden{
+#hidden{
 	visibility: hidden;
-} */
+}
+
+#noborder{
+	border: 0px transparent;
+}
+
+td{
+	border: 1px solid;
+	font-size: x-large;
+}	
+
+th{
+	font-size: medium;
+}
