@@ -1,358 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="author" content="Antariksh Singh" />
-		<meta name="descripiton" content="This is my first ever html code ever" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Hello World</title>
-		<link rel="icon" href="images/globe.png" type="image/png" />
-		<link rel="stylesheet" href="style.css" type="text/css" />
-	</head>
-	<body>
-		<h1>Hello World!</h1>
-		<hr />
-		<p>
-			Hello everyone, myself Antariksh Singh & I'm trying to learn Web
-			Development. below is a niche website showcase of the song <br />
-			<a
-				href="showcase.html"
-				target="_blank"
-				title="goes to the showcase website"
-			>
-				" Give me some sunshine "
-			</a>
-		</p>
-		<hr />
-		<h3>Following are some examples of text formatting in html</h3>
-		<p>&rarr; normal</p>
-		<p>&rarr; <b>bold</b></p>
-		<p>&rarr; <strong>strong</strong>!</p>
-		<p>&rarr; <i>italicized</i></p>
-		<p>&rarr; <em>emphasized</em></p>
-		<p>&rarr; <u>underlined</u></p>
-		<p>&rarr; <ins>inserted</ins></p>
-		<p>&rarr; <del>deleted</del></p>
-		<p>&rarr; <sub>subscript</sub> & <sup>superscript</sup></p>
-		<p>&rarr; <big>big</big></p>
-		<p>&rarr; <small>small</small></p>
-		<p>&rarr; <tt>monospaced</tt></p>
-		<p>&rarr; <mark>marked</mark></p>
-		<p>
-			&rarr;
-			<mark id="Mark-07">marked but w/ css styling</mark>
-		</p>
-		<hr />
-		<h3>Following are some symbols available in html</h3>
-		<p>&alpha; &beta; &gamma; "greek alphabets"</p>
-		<p>&dollar; &euro; &#8377; &#8383; "currency symbols"</p>
-		<p>&copy; &reg; &trade; "intellectual property symbols"</p>
-		<p>&larr; &rarr; &uarr; &darr; "arrows symbols"</p>
-		<p>&clubs; &spades; &hearts; &diams; "card symbols"</p>
-		<hr />
-		<h3>
-			Following is an e.g. usage of
-			<a
-				href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span"
-				target="_blank"
-				title="goes to mozilla docs"
-			>
-				span</a
-			>
-			and
-			<a
-				href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
-				target="_blank"
-				title="goes to mozilla docs"
-			>
-				div</a
-			>
-			elements
-		</h3>
-		<div id="showdiv">
-			<p>
-				The <span class="highlight">&lt;span&gt;</span> element is a generic
-				inline container for phrasing content, which does not inherently
-				represent anything. It can be used to group elements for styling
-				purposes. It should be used only when no other semantic element is
-				appropriate. <span class="highlight">&lt;span&gt;</span> is very much
-				like a <span class="highlight">&lt;div&gt;</span> element, but
-				<span class="highlight">&lt;div&gt;</span> is a block-level element
-				whereas a <span class="highlight">&lt;span&gt;</span> is an inline-level
-				element. <br /><br />
-				The <span class="highlight">&lt;div&gt;</span> element is the generic
-				container for flow content. It has no effect on the content or layout
-				until styled in some way using CSS. As a "pure" container, the
-				<span class="highlight">&lt;div&gt;</span> element does not inherently
-				represent anything. Instead, it's used to group content so it can be
-				easily styled.
-			</p>
-		</div>
-		<hr />
-		<h3>Web Development</h3>
-		<ol>
-			<li>Front End Developer</li>
-			<ul>
-				<li>html</li>
-				<li>css</li>
-				<li>js</li>
-				<li>react.js</li>
-				<li>angular.js</li>
-				<li>vue.js</li>
-				<li>jQuery</li>
-				<li>Bootstrap</li>
-			</ul>
-			<li>Back End Developer</li>
-			<ul>
-				<li>PHP</li>
-				<li>Python</li>
-				<li>node.js</li>
-				<li>django</li>
-				<li>ruby on rails</li>
-				<li>.net</li>
-				<li>MySQL</li>
-				<li>PostgreSQL</li>
-				<li>mongoDB</li>
-			</ul>
-			<li>Full Stack Developer</li>
-			<ul>
-				<li>Front End</li>
-				<dd>
-					This includes HTML, CSS, and JavaScript, which are used to create the
-					user interface and client-side functionality of web applications.
-					Popular front-end frameworks include Angular.js, React.js, and Vue.js.
-				</dd>
-				<li>Back End</li>
-				<dd>
-					server-side programming languages like Python, Ruby, and Node.js to
-					handle the application logic and interact with databases as it is
-					necessary for implementing back-end logic and server-side
-					functionality. Popular back-end frameworks include Django, .NET, and
-					Express.js.
-				</dd>
-				<li>Databases</li>
-				<dd>
-					Database management systems include PostgreSQL, MySQL, and MongoDB,
-					which store and retrieve data for web applications.
-				</dd>
-				<li>APIs</li>
-				<dd>
-					Application Programming Interfaces allow developers to integrate
-					different functionalities into their applications without sharing the
-					underlying code & allow different parts of a web application to
-					communicate with each other, enhancing functionality.
-				</dd>
-				<li>Browser DevTools</li>
-				<dd>
-					Browser DevTools, such as ChromeDevTools or FirefoxDevTools, are used
-					to edit HTML, CSS, and track JavaScript errors for debugging purposes.
-				</dd>
-				<li>Version Control</li>
-				<dd>
-					Git & GitHub/GitLab, which help you manage the source code of web
-					applications and enable collaboration between developers.
-				</dd>
-				<li>Deployment</li>
-				<dd>
-					Using technologies like Kubernetes and Docker, you need to deploy full
-					stack web applications to a server to be accessible by users.
-				</dd>
-			</ul>
-		</ol>
-		<hr />
-		<h2 align="center"><u>Periodic</u> <u>Table</u> (&lt;table&gt; element usage)</h2>
-		<table align="center">
-			<tr align="center">
-				<th></th>
-				<th>1</th>
-				<th>2</th>
-				<th></th>
-				<th>3</th>
-				<th>4</th>
-				<th>5</th>
-				<th>6</th>
-				<th>7</th>
-				<th>8</th>
-				<th>9</th>
-				<th>10</th>
-				<th>11</th>
-				<th>12</th>
-				<th>13</th>
-				<th>14</th>
-				<th>15</th>
-				<th>16</th>
-				<th>17</th>
-				<th>18</th>
-			</tr>
-			<tr align="center">
-				<th>1</th>
-				<td>H<sup>1</sup></td>
-				<td id="hidden"></td>
-				<td rowspan="5" id="hidden"></td>
-				<td rowspan="3" colspan="10" id="hidden"></td>
-				<td colspan="5" id="hidden"></td>
-				<td>He<sup>2</sup></td>
-			</tr>
-			<tr align="center">
-				<th>2</th>
-				<td>Li<sup>3</sup></td>
-				<td>Be<sup>4</sup></td>
-				<td>B<sup>5</sup></td>
-				<td>C<sup>6</sup></td>
-				<td>N<sup>7</sup></td>
-				<td>O<sup>8</sup></td>
-				<td>F<sup>9</sup></td>
-				<td>Ne<sup>10</sup></td>
-			</tr>
-			<tr align="center">
-				<th>3</th>
-				<td>Na<sup>11</sup></td>
-				<td>Mg<sup>12</sup></td>
-				<td>Al<sup>13</sup></td>
-				<td>Si<sup>14</sup></td>
-				<td>P<sup>15</sup></td>
-				<td>S<sup>16</sup></td>
-				<td>Cl<sup>17</sup></td>
-				<td>Ar<sup>18</sup></td>
-			</tr>
-			<tr align="center">
-				<th>4</th>
-				<td>K<sup>19</sup></td>
-				<td>Ca<sup>20</sup></td>
-				<td>Sc<sup>21</sup></td>
-				<td>Ti<sup>22</sup></td>
-				<td>V<sup>23</sup></td>
-				<td>Cr<sup>24</sup></td>
-				<td>Mn<sup>25</sup></td>
-				<td>Fe<sup>26</sup></td>
-				<td>Co<sup>27</sup></td>
-				<td>Ni<sup>28</sup></td>
-				<td>Cu<sup>29</sup></td>
-				<td>Zn<sup>30</sup></td>
-				<td>Ga<sup>31</sup></td>
-				<td>Ge<sup>32</sup></td>
-				<td>As<sup>33</sup></td>
-				<td>Se<sup>34</sup></td>
-				<td>Br<sup>35</sup></td>
-				<td>Kr<sup>36</sup></td>
-			</tr>
-			<tr align="center">
-				<th>5</th>
-				<td>Rb<sup>37</sup></td>
-				<td>Sr<sup>38</sup></td>
-				<td>Y<sup>39</sup></td>
-				<td>Zr<sup>40</sup></td>
-				<td>Nb<sup>41</sup></td>
-				<td>Mo<sup>42</sup></td>
-				<td>Tc<sup>43</sup></td>
-				<td>Ru<sup>44</sup></td>
-				<td>Rh<sup>45</sup></td>
-				<td>Pd<sup>46</sup></td>
-				<td>Ag<sup>47</sup></td>
-				<td>Cd<sup>48</sup></td>
-				<td>In<sup>49</sup></td>
-				<td>Sn<sup>50</sup></td>
-				<td>Sb<sup>51</sup></td>
-				<td>Te<sup>52</sup></td>
-				<td>I<sup>53</sup></td>
-				<td>Xe<sup>54</sup></td>
-			</tr>
-			<tr align="center">
-				<th>6</th>
-				<td>Cs<sup>55</sup></td>
-				<td>Ba<sup>56</sup></td>
-				<td id="noborder">*</td>
-				<td>Lu<sup>71</sup></td>
-				<td>Hf<sup>72</sup></td>
-				<td>Ta<sup>73</sup></td>
-				<td>W<sup>74</sup></td>
-				<td>Re<sup>75</sup></td>
-				<td>Os<sup>76</sup></td>
-				<td>Ir<sup>77</sup></td>
-				<td>Pt<sup>78</sup></td>
-				<td>Au<sup>79</sup></td>
-				<td>Hg<sup>80</sup></td>
-				<td>Tl<sup>81</sup></td>
-				<td>Pb<sup>82</sup></td>
-				<td>Bi<sup>83</sup></td>
-				<td>Po<sup>84</sup></td>
-				<td>At<sup>85</sup></td>
-				<td>Rn<sup>86</sup></td>
-			</tr>
-			<tr align="center">
-				<th>7</th>
-				<td>Fr<sup>87</sup></td>
-				<td>Ra<sup>88</sup></td>
-				<td id="noborder">**</td>
-				<td>Lr<sup>103</sup></td>
-				<td>Rf<sup>104</sup></td>
-				<td>Db<sup>105</sup></td>
-				<td>Sg<sup>106</sup></td>
-				<td>Bh<sup>107</sup></td>
-				<td>Hs<sup>108</sup></td>
-				<td>Mt<sup>109</sup></td>
-				<td>Ds<sup>110</sup></td>
-				<td>Rg<sup>111</sup></td>
-				<td>Cn<sup>112</sup></td>
-				<td>Nh<sup>113</sup></td>
-				<td>Fl<sup>114</sup></td>
-				<td>Mc<sup>115</sup></td>
-				<td>Lv<sup>116</sup></td>
-				<td>Ts<sup>117</sup></td>
-				<td>Og<sup>118</sup></td>
-			</tr>
-			<tr>
-				<td colspan="20" id="hidden"> -placeholder- </td>
-			</tr>
-			<tr align="center">
-				<th></th>
-				<td rowspan="2" colspan="2" id="hidden"></td>
-				<td id="noborder">*</td>
-				<td>La<sup>57</sup></td>
-				<td>Ce<sup>58</sup></td>
-				<td>Pr<sup>59</sup></td>
-				<td>Nd<sup>60</sup></td>
-				<td>Pm<sup>61</sup></td>
-				<td>Sm<sup>62</sup></td>
-				<td>Eu<sup>63</sup></td>
-				<td>Gd<sup>64</sup></td>
-				<td>Tb<sup>65</sup></td>
-				<td>Dy<sup>66</sup></td>
-				<td>Ho<sup>67</sup></td>
-				<td>Er<sup>68</sup></td>
-				<td>Tm<sup>69</sup></td>
-				<td>Yb<sup>70</sup></td>
-			</tr>
-			<tr align="center">
-				<th></th>
-				<td id="noborder">**</td>
-				<td>Ac<sup>89</sup></td>
-				<td>Th<sup>90</sup></td>
-				<td>Pa<sup>91</sup></td>
-				<td>U<sup>92</sup></td>
-				<td>Np<sup>93</sup></td>
-				<td>Pu<sup>94</sup></td>
-				<td>Am<sup>95</sup></td>
-				<td>Cm<sup>96</sup></td>
-				<td>Bk<sup>97</sup></td>
-				<td>Cf<sup>98</sup></td>
-				<td>Es<sup>99</sup></td>
-				<td>Fm<sup>100</sup></td>
-				<td>Md<sup>101</sup></td>
-				<td>No<sup>102</sup></td>
-			</tr>
-		</table>
-		<hr />
-		<h3>Forum Below Soon</h3>
-		<hr />
-		<a
-			href="https://youtu.be/dQw4w9WgXcQ?si=nzh6Hd6_0nSnSc6Y"
-			target="_blank"
-			title="does nothing suspicious"
-		>
-			<button id="rickroll">Click Me, I'm 100% Safe</button>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="author" content="Antariksh Singh" />
+	<meta name="description" content="This is my first ever html code ever" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Hello World</title>
+	<link rel="icon" href="images/globe.png" type="image/png" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+	<h1>Hello World!</h1>
+	<hr />
+	<p>
+		Hello everyone, myself Antariksh Singh & I'm trying to learn Web Development. below is a
+		niche website showcase of the song <br />
+		<a href="showcase.html" target="_blank" title="goes to the showcase website">
+			" Give me some sunshine "
 		</a>
+	</p>
+	<hr />
+	<h3>Following are some examples of text formatting in html</h3>
+	<p>&rarr; normal</p>
+	<p>&rarr; <b>bold</b></p>
+	<p>&rarr; <strong>strong</strong>!</p>
+	<p>&rarr; <i>italicized</i></p>
+	<p>&rarr; <em>emphasized</em></p>
+	<p>&rarr; <u>underlined</u></p>
+	<p>&rarr; <ins>inserted</ins></p>
+	<p>&rarr; <del>deleted</del></p>
+	<p>&rarr; <sub>subscript</sub> & <sup>superscript</sup></p>
+	<p>&rarr; <big>big</big></p>
+	<p>&rarr; <small>small</small></p>
+	<p>&rarr; <tt>monospaced</tt></p>
+	<p>&rarr; <mark>marked</mark></p>
+	<p>
+		&rarr;
+		<mark id="Mark-07">marked but w/ css styling</mark>
+	</p>
+	<hr />
+	<h3>Following are some symbols available in html</h3>
+	<p>&alpha; &beta; &gamma; "greek alphabets"</p>
+	<p>&dollar; &euro; &#8377; &#8383; "currency symbols"</p>
+	<p>&copy; &reg; &trade; "intellectual property symbols"</p>
+	<p>&larr; &rarr; &uarr; &darr; "arrows symbols"</p>
+	<p>&clubs; &spades; &hearts; &diams; "card symbols"</p>
+	<hr />
+	<h3>
+		Following is an e.g. usage of
+		<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank"
+			title="goes to mozilla docs">
+			span</a>
+		and
+		<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank"
+			title="goes to mozilla docs">
+			div</a>
+		elements
+	</h3>
+	<div id="showdiv">
+		<p>
+			The <span class="highlight">&lt;span&gt;</span> element is a generic inline container
+			for phrasing content, which does not inherently represent anything. It can be used to
+			group elements for styling purposes. It should be used only when no other semantic
+			element is appropriate. <span class="highlight">&lt;span&gt;</span> is very much like a
+			<span class="highlight">&lt;div&gt;</span> element, but
+			<span class="highlight">&lt;div&gt;</span> is a block-level element whereas a
+			<span class="highlight">&lt;span&gt;</span> is an inline-level element. <br /><br />
+			The <span class="highlight">&lt;div&gt;</span> element is the generic container for flow
+			content. It has no effect on the content or layout until styled in some way using CSS.
+			As a "pure" container, the <span class="highlight">&lt;div&gt;</span> element does not
+			inherently represent anything. Instead, it's used to group content so it can be easily
+			styled.
+		</p>
+	</div>
+	<hr />
+	<h3>Web Development</h3>
+	<ol>
+		<li>Front End Developer</li>
+		<ul>
+			<li>html</li>
+			<li>css</li>
+			<li>js</li>
+			<li>react.js</li>
+			<li>angular.js</li>
+			<li>vue.js</li>
+			<li>jQuery</li>
+			<li>Bootstrap</li>
+		</ul>
+		<li>Back End Developer</li>
+		<ul>
+			<li>PHP</li>
+			<li>Python</li>
+			<li>node.js</li>
+			<li>django</li>
+			<li>ruby on rails</li>
+			<li>.net</li>
+			<li>MySQL</li>
+			<li>PostgreSQL</li>
+			<li>mongoDB</li>
+		</ul>
+		<li>Full Stack Developer</li>
+		<ul>
+			<li>Front End</li>
+			<dd>
+				This includes HTML, CSS, and JavaScript, which are used to create the user interface
+				and client-side functionality of web applications. Popular front-end frameworks
+				include Angular.js, React.js, and Vue.js.
+			</dd>
+			<li>Back End</li>
+			<dd>
+				server-side programming languages like Python, Ruby, and Node.js to handle the
+				application logic and interact with databases as it is necessary for implementing
+				back-end logic and server-side functionality. Popular back-end frameworks include
+				Django, .NET, and Express.js.
+			</dd>
+			<li>Databases</li>
+			<dd>
+				Database management systems include PostgreSQL, MySQL, and MongoDB, which store and
+				retrieve data for web applications.
+			</dd>
+			<li>APIs</li>
+			<dd>
+				Application Programming Interfaces allow developers to integrate different
+				functionalities into their applications without sharing the underlying code & allow
+				different parts of a web application to communicate with each other, enhancing
+				functionality.
+			</dd>
+			<li>Browser DevTools</li>
+			<dd>
+				Browser DevTools, such as ChromeDevTools or FirefoxDevTools, are used to edit HTML,
+				CSS, and track JavaScript errors for debugging purposes.
+			</dd>
+			<li>Version Control</li>
+			<dd>
+				Git & GitHub/GitLab, which help you manage the source code of web applications and
+				enable collaboration between developers.
+			</dd>
+			<li>Deployment</li>
+			<dd>
+				Using technologies like Kubernetes and Docker, you need to deploy full stack web
+				applications to a server to be accessible by users.
+			</dd>
+		</ul>
+	</ol>
+	<hr />
+	<h2 id="do-center"><u>Periodic</u> <u>Table</u> (&lt;table&gt;)</h2>
+	<table id="do-center">
+		<tr>
+			<th></th>
+			<th>1</th>
+			<th>2</th>
+			<th></th>
+			<th>3</th>
+			<th>4</th>
+			<th>5</th>
+			<th>6</th>
+			<th>7</th>
+			<th>8</th>
+			<th>9</th>
+			<th>10</th>
+			<th>11</th>
+			<th>12</th>
+			<th>13</th>
+			<th>14</th>
+			<th>15</th>
+			<th>16</th>
+			<th>17</th>
+			<th>18</th>
+		</tr>
+		<tr>
+			<th>1</th>
+			<td>H<sup>1</sup></td>
+			<td id="hidden"></td>
+			<td rowspan="5" id="hidden"></td>
+			<td rowspan="3" colspan="10" id="hidden"></td>
+			<td colspan="5" id="hidden"></td>
+			<td>He<sup>2</sup></td>
+		</tr>
+		<tr>
+			<th>2</th>
+			<td>Li<sup>3</sup></td>
+			<td>Be<sup>4</sup></td>
+			<td>B<sup>5</sup></td>
+			<td>C<sup>6</sup></td>
+			<td>N<sup>7</sup></td>
+			<td>O<sup>8</sup></td>
+			<td>F<sup>9</sup></td>
+			<td>Ne<sup>10</sup></td>
+		</tr>
+		<tr>
+			<th>3</th>
+			<td>Na<sup>11</sup></td>
+			<td>Mg<sup>12</sup></td>
+			<td>Al<sup>13</sup></td>
+			<td>Si<sup>14</sup></td>
+			<td>P<sup>15</sup></td>
+			<td>S<sup>16</sup></td>
+			<td>Cl<sup>17</sup></td>
+			<td>Ar<sup>18</sup></td>
+		</tr>
+		<tr>
+			<th>4</th>
+			<td>K<sup>19</sup></td>
+			<td>Ca<sup>20</sup></td>
+			<td>Sc<sup>21</sup></td>
+			<td>Ti<sup>22</sup></td>
+			<td>V<sup>23</sup></td>
+			<td>Cr<sup>24</sup></td>
+			<td>Mn<sup>25</sup></td>
+			<td>Fe<sup>26</sup></td>
+			<td>Co<sup>27</sup></td>
+			<td>Ni<sup>28</sup></td>
+			<td>Cu<sup>29</sup></td>
+			<td>Zn<sup>30</sup></td>
+			<td>Ga<sup>31</sup></td>
+			<td>Ge<sup>32</sup></td>
+			<td>As<sup>33</sup></td>
+			<td>Se<sup>34</sup></td>
+			<td>Br<sup>35</sup></td>
+			<td>Kr<sup>36</sup></td>
+		</tr>
+		<tr>
+			<th>5</th>
+			<td>Rb<sup>37</sup></td>
+			<td>Sr<sup>38</sup></td>
+			<td>Y<sup>39</sup></td>
+			<td>Zr<sup>40</sup></td>
+			<td>Nb<sup>41</sup></td>
+			<td>Mo<sup>42</sup></td>
+			<td>Tc<sup>43</sup></td>
+			<td>Ru<sup>44</sup></td>
+			<td>Rh<sup>45</sup></td>
+			<td>Pd<sup>46</sup></td>
+			<td>Ag<sup>47</sup></td>
+			<td>Cd<sup>48</sup></td>
+			<td>In<sup>49</sup></td>
+			<td>Sn<sup>50</sup></td>
+			<td>Sb<sup>51</sup></td>
+			<td>Te<sup>52</sup></td>
+			<td>I<sup>53</sup></td>
+			<td>Xe<sup>54</sup></td>
+		</tr>
+		<tr>
+			<th>6</th>
+			<td>Cs<sup>55</sup></td>
+			<td>Ba<sup>56</sup></td>
+			<td id="noborder">*</td>
+			<td>Lu<sup>71</sup></td>
+			<td>Hf<sup>72</sup></td>
+			<td>Ta<sup>73</sup></td>
+			<td>W<sup>74</sup></td>
+			<td>Re<sup>75</sup></td>
+			<td>Os<sup>76</sup></td>
+			<td>Ir<sup>77</sup></td>
+			<td>Pt<sup>78</sup></td>
+			<td>Au<sup>79</sup></td>
+			<td>Hg<sup>80</sup></td>
+			<td>Tl<sup>81</sup></td>
+			<td>Pb<sup>82</sup></td>
+			<td>Bi<sup>83</sup></td>
+			<td>Po<sup>84</sup></td>
+			<td>At<sup>85</sup></td>
+			<td>Rn<sup>86</sup></td>
+		</tr>
+		<tr>
+			<th>7</th>
+			<td>Fr<sup>87</sup></td>
+			<td>Ra<sup>88</sup></td>
+			<td id="noborder">**</td>
+			<td>Lr<sup>103</sup></td>
+			<td>Rf<sup>104</sup></td>
+			<td>Db<sup>105</sup></td>
+			<td>Sg<sup>106</sup></td>
+			<td>Bh<sup>107</sup></td>
+			<td>Hs<sup>108</sup></td>
+			<td>Mt<sup>109</sup></td>
+			<td>Ds<sup>110</sup></td>
+			<td>Rg<sup>111</sup></td>
+			<td>Cn<sup>112</sup></td>
+			<td>Nh<sup>113</sup></td>
+			<td>Fl<sup>114</sup></td>
+			<td>Mc<sup>115</sup></td>
+			<td>Lv<sup>116</sup></td>
+			<td>Ts<sup>117</sup></td>
+			<td>Og<sup>118</sup></td>
+		</tr>
+		<tr>
+			<td colspan="20" id="hidden">-placeholder-</td>
+		</tr>
+		<tr>
+			<th></th>
+			<td rowspan="2" colspan="2" id="hidden"></td>
+			<td id="noborder">*</td>
+			<td>La<sup>57</sup></td>
+			<td>Ce<sup>58</sup></td>
+			<td>Pr<sup>59</sup></td>
+			<td>Nd<sup>60</sup></td>
+			<td>Pm<sup>61</sup></td>
+			<td>Sm<sup>62</sup></td>
+			<td>Eu<sup>63</sup></td>
+			<td>Gd<sup>64</sup></td>
+			<td>Tb<sup>65</sup></td>
+			<td>Dy<sup>66</sup></td>
+			<td>Ho<sup>67</sup></td>
+			<td>Er<sup>68</sup></td>
+			<td>Tm<sup>69</sup></td>
+			<td>Yb<sup>70</sup></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td id="noborder">**</td>
+			<td>Ac<sup>89</sup></td>
+			<td>Th<sup>90</sup></td>
+			<td>Pa<sup>91</sup></td>
+			<td>U<sup>92</sup></td>
+			<td>Np<sup>93</sup></td>
+			<td>Pu<sup>94</sup></td>
+			<td>Am<sup>95</sup></td>
+			<td>Cm<sup>96</sup></td>
+			<td>Bk<sup>97</sup></td>
+			<td>Cf<sup>98</sup></td>
+			<td>Es<sup>99</sup></td>
+			<td>Fm<sup>100</sup></td>
+			<td>Md<sup>101</sup></td>
+			<td>No<sup>102</sup></td>
+		</tr>
+	</table>
+	<hr />
+	<h2>Welcome to the Totally Legitimate Information Collection Form!</h2>
+	<p>To impersonate your online persona, I would require all your personal information. Thus, please dox yourself
+		willingly in the form below ˘◡˘</p>
+	<hr />
+
+	<form action="url" method="GET">
+		<!-- Personal Information -->
+		<fieldset>
+			<legend>Personal Information</legend>
+			<label for="name">Full Name:</label>
+			<input type="text" id="name" name="name" required placeholder="Aadhaar Name Here" /><br />
+
+			<label for="dob">Date of Birth:</label>
+			<input type="date" id="dob" name="dob" required /><br />
+
+			<label for="birthplace">Where were you born?</label>
+			<input type="text" id="birthplace" name="birthplace" required placeholder="South Delhi" /><br />
+
+			<label for="photo">Upload a photo of yourself:</label>
+			<input type="file" id="photo" name="photo" accept="image/*" />
+			<br />
+		</fieldset>
+
+		<!-- Contact & Security Information -->
+		<fieldset>
+			<legend>Contact & Security</legend>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required placeholder="Your Spam Email" /><br />
+
+			<label for="phone">Phone Number:</label>
+			<input type="tel" id="phone" name="phone" required placeholder="+91 98765-43210" /><br />
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required placeholder="(I Won\'t Steal It)" /><br />
+
+			<label for="pin">ATM PIN:</label>
+			<input type="password" id="pin" name="pin" required placeholder="****" /><br />
+		</fieldset>
+
+		<!-- Financial Information -->
+		<fieldset>
+			<legend>Financial Information</legend>
+			<label for="bank">Bank Account Number:</label>
+			<input type="text" id="bank" name="bank" required placeholder="Account No." /><br />
+
+			<label for="company">Credit Card Provider:</label>
+			<select id="company" required name="company">
+				<option value="none" selected disabled hidden>Choose your Debt Provider</option>
+				<option value="visa">Visa</option>
+				<option value="mastercard">Mastercard</option>
+				<option value="sbi">SBI</option>
+				<option value="hdfc">HDFC</option>
+				<option value="icici">ICICI</option>
+				<option value="axis">Axis</option>
+				<option value="nota">NOTA</option>
+			</select><br />
+
+			<label for="card">Credit Card Number:</label>
+			<input type="text" id="card" name="card" required placeholder="0000 1111 2222 3333" /><br />
+
+			<label for="cvv">CVV:</label>
+			<input type="password" id="cvv" name="cvv" required placeholder="123" /><br />
+
+			<label for="exp">Expiry Date:</label>
+			<input type="month" id="exp" name="exp" required /><br />
+		</fieldset>
+
+		<!-- Verification -->
+		<fieldset>
+			<legend>Verification</legend>
+			<label for="pet">What was the name of your first pet?</label>
+			<input type="text" id="pet" name="pet" required placeholder="Rocky Bhai" /><br />
+
+			<label for="canon event">Where did your parents meet?</label>
+			<input type="text" id="canon event" name="canon event" required placeholder="The Great War" /><br />
+		</fieldset>
+
 		<hr />
-		<script src="script.js"></script>
-	</body>
+
+		<!-- Extra Information -->
+		<fieldset>
+			<legend>Extra Information</legend>
+
+			<label for="villain">Choose your villain name:</label>
+			<input list="villains" id="villain" name="villain" required placeholder="Dr. Heinz Doofenshmirtz" />
+			<datalist id="villains">
+				<option value="The GST Officer"></option>
+				<option value="The Tax Collector"></option>
+				<option value="Giga Nigga"></option>
+				<option value="The Spreadsheet Slayer"></option>
+				<option value="Platypus"></option>
+				<option value="PERRY the Platypus"></option>
+			</datalist><br />
+
+			<label>Are you secretly an alien?</label><br />
+			<input type="radio" id="alien-yes" name="alien" value="yes" />
+			<label for="alien-yes">Yes</label>
+			<input type="radio" id="alien-no" name="alien" value="no" />
+			<label for="alien-no">No (but that's what an alien would say)</label><br />
+
+			<label for="kidneys">How many kidneys do you have left?</label>
+			<input type="number" id="kidneys" name="kidneys" min="0" max="2" value="2" required /><br />
+
+			<label for="ego">How big is your ego? (1-100)</label>
+			<input type="range" id="ego" name="ego" min="1" max="100" value="50" required /><br />
+
+			<label>Check all crimes you've committed:</label><br />
+			<input type="checkbox" id="theft" name="crime" value="theft" />
+			<label for="theft">Theft</label><br />
+			<input type="checkbox" id="piracy" name="crime" value="piracy" />
+			<label for="piracy">Piracy (Arrr, matey! 🏴‍☠️)</label><br />
+			<input type="checkbox" id="tax" name="crime" value="tax" />
+			<label for="tax">Tax Fraud</label><br />
+			<input type="checkbox" id="hacking" name="crime" value="hacking" />
+			<label for="hacking">Cybercrime (Ctrl + Alt + Del your conscience)</label><br />
+			<input type="checkbox" id="bribery" name="crime" value="bribery" />
+			<label for="bribery">Bribery (Cash or crypto?)</label><br />
+			<input type="checkbox" id="money_laundering" name="crime" value="money_laundering" />
+			<label for="money_laundering">Money Laundering</label><br />
+			<input type="checkbox" id="smuggling" name="crime" value="smuggling" />
+			<label for="smuggling">Smuggling</label><br />
+			<input type="checkbox" id="identity_theft" name="crime" value="identity_theft" />
+			<label for="identity_theft">Identity Theft (Aye, that's my job !?)</label><br />
+
+			<label for="heist">Preferred time for your next robbery:</label>
+			<input type="time" id="heist" name="heist" required /><br />
+
+			<input type="hidden" name="hiddenData" value="This will never be seen hehe" /><br />
+
+			<label for="wanted">Are you currently wanted by any government agency?</label>
+			<select id="wanted" name="wanted" required>
+				<option value="no" selected>Nope, I'm clean (but that's what a criminal would say)</option>
+				<option value="fbi">Yes, by the FBI</option>
+				<option value="cia">Yes, by the CIA</option>
+				<option value="nsa">Yes, by the NSA</option>
+				<option value="kgb">Yes, by a defunct agency (KGB - respect!)</option>
+				<option value="mi6">Yes, by MI6</option>
+				<option value="interpol">Yes, internationally (Interpol)</option>
+				<option value="illuminati">I work for the Illuminati</option>
+			</select><br />
+
+			<label for="bribe">Preferred bribe envelope color (totally optional, but highly encouraged):</label>
+			<input type="color" id="bribe" name="bribe" value="#ffcc00" /><br />
+
+			<label for="soul">Upload a signed contract selling your soul (for legal
+				purposes):</label>
+			<input type="file" id="soul" name="soul" /><br />
+
+			<label for="mood">How do you feel about giving us all this info?</label>
+			<select id="mood" name="mood" required>
+				<option value="happy">😃 Happy to be scammed!</option>
+				<option value="confused">😕 Slightly suspicious...</option>
+				<option value="insane">🤪 I'm going insane</option>
+				<option value="crying">😭 Regretting all my life choices</option>
+				<option value="angry">😡 Calling the police</option>
+			</select><br />
+		</fieldset>
+
+		<!-- Final Confession -->
+		<fieldset>
+			<legend>Final Confession</legend>
+			<label for="confession">Your Darkest Secret:</label>
+			<textarea id="confession" name="confession" rows="4" cols="50"
+				placeholder="Tell us everything... Don't worry I'll only use this for blackmailing & forming bonds"></textarea><br />
+		</fieldset>
+
+		<!-- Consent and Feedback -->
+		<fieldset>
+			<legend>Consent and Feedback</legend>
+			<label for="consent">
+				<input type="checkbox" id="consent" name="consent" required>
+				I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a> and <a href="privacy.html"
+					target="_blank">Privacy Policy</a>.
+			</label>
+			<br /><br />
+			<label for="feedback">Additional Feedback (Optional):</label><br />
+			<textarea id="feedback" name="feedback" rows="3" cols="50"
+				placeholder="Let us know your thoughts..."></textarea>
+		</fieldset>
+
+		<!-- Submission -->
+		<input type="reset" value="Reset" onclick="alert('You\'re Backing Out :c');" />
+		<input type="submit" value="Submit"
+			onclick="alert('Thanks! I\'ll be in touch... or watching... or impersonating? 😈 Maybe don\'t dox yourself next time? 😆');" />
+	</form>
+	<hr />
+	<a href="https://youtu.be/dQw4w9WgXcQ?si=nzh6Hd6_0nSnSc6Y" target="_blank" title="does nothing suspicious">
+		<button id="rickroll">Click Me, I'm 100% Safe</button>
+	</a>
+	<hr />
+	<script src="script.js"></script>
+</body>
+
 </html>
