@@ -11,6 +11,23 @@ body {
 	margin: 0;
 }
 
+header {
+	background-color: #2d2d2d;
+	color: whitesmoke;
+	padding: 0.5rem;
+	text-align: left;
+	border-bottom: 3px solid #444;
+}
+
+footer {
+	font-size: 70%;
+	background-color: #2d2d2d;
+	color: whitesmoke;
+	padding: 0.5rem;
+	text-align: right;
+	border-top: 3px solid #444;
+}
+
 h1, h2, h3, h4, legend {
 	color: #e0e0e0;
 }
@@ -18,12 +35,12 @@ h1, h2, h3, h4, legend {
 hr {
 	border: 0;
 	height: 2px;
-	background: #e0e0e0;
+	background: #444;
 	margin: 20px 0%;
 }
 
 fieldset {
-	border: 1px solid #e0e0e0;
+	border: 1px solid #444;
 	padding: 15px;
 	margin-bottom: 20px;
 	border-radius: 5px;
@@ -46,14 +63,6 @@ textarea {
   border-radius: 3px;
 }
 
-input[list="villains"] {
-	background-color: #444;
-	border: 1px solid #555;
-	color: whitesmoke;
-	padding: 5px;
-	border-radius: 3px;
-}
-
 input[type="color"] {
   padding: 0;
   border: none;
@@ -69,6 +78,7 @@ input[type="button"],
   border: 1px solid #555;
   padding: 10px 20px;
   margin-right: 10px;
+  margin-bottom: 10px;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -124,6 +134,10 @@ a:active {
 
 #noborder {
 	border: 0px transparent;
+}
+
+#border {
+	border: 8px solid #222;
 }
 
 td {
