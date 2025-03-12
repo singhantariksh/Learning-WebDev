@@ -12,191 +12,201 @@
 </head>
 
 <body>
-    <h1>Totally Legitimate Information Collection Form!</h1>
-    <p>To impersonate your online persona, I would require all your personal information. Thus, please dox yourself
-        willingly in the form below ˘◡˘</p>
-    <hr />
+    <header>
+        <h1>Totally Legitimate Information Collection Form!</h1>
+        <p>To impersonate your online persona, I would require all your personal information. Thus, please dox yourself
+            willingly in the form below ˘◡˘</p>
+    </header>
 
-    <form action="url" method="GET">
-        <!-- Personal Information -->
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Aadhaar Name Here" /><br />
+    <main>
+        <form action="url" method="GET">
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Aadhaar Name Here" /><br />
 
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" required /><br />
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required /><br />
 
-            <label for="birthplace">Where were you born?</label>
-            <input type="text" id="birthplace" name="birthplace" required placeholder="South Delhi" /><br />
+                <label for="birthplace">Where were you born?</label>
+                <input type="text" id="birthplace" name="birthplace" required placeholder="South Delhi" /><br />
 
-            <label for="photo">Upload a photo of yourself:</label>
-            <input type="file" id="photo" name="photo" accept="image/*" />
-            <br />
-        </fieldset>
+                <label for="photo">Upload a photo of yourself:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" />
+                <br />
+            </fieldset>
 
-        <!-- Contact & Security Information -->
-        <fieldset>
-            <legend>Contact & Security</legend>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Your Spam Email" /><br />
+            <!-- Contact & Security Information -->
+            <fieldset>
+                <legend>Contact & Security</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Spam Email" /><br />
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required placeholder="+91 98765-43210" /><br />
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+91 9876543210"
+                    pattern="\+\d{1,4} \d{10}" /><br />
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required placeholder="(I Won\'t Steal It)" /><br />
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required
+                    placeholder="PS: I Won't Steal It" /><br />
 
-            <label for="pin">ATM PIN:</label>
-            <input type="password" id="pin" name="pin" required placeholder="****" /><br />
-        </fieldset>
+                <label for="pin">ATM PIN:</label>
+                <input type="password" id="pin" name="pin" required placeholder="****" /><br />
+            </fieldset>
 
-        <!-- Financial Information -->
-        <fieldset>
-            <legend>Financial Information</legend>
-            <label for="bank">Bank Account Number:</label>
-            <input type="text" id="bank" name="bank" required placeholder="Account No." /><br />
+            <!-- Financial Information -->
+            <fieldset>
+                <legend>Financial Information</legend>
+                <label for="bank">Bank Account Number:</label>
+                <input type="text" id="bank" name="bank" required placeholder="Account No." /><br />
 
-            <label for="company">Credit Card Provider:</label>
-            <select id="company" required name="company">
-                <option value="none" selected disabled hidden>Choose your Debt Provider</option>
-                <option value="visa">Visa</option>
-                <option value="mastercard">Mastercard</option>
-                <option value="sbi">SBI</option>
-                <option value="hdfc">HDFC</option>
-                <option value="icici">ICICI</option>
-                <option value="axis">Axis</option>
-                <option value="nota">NOTA</option>
-            </select><br />
+                <label for="company">Credit Card Provider:</label>
+                <select id="company" required name="company">
+                    <option value="none" selected disabled hidden>Choose your Debt Provider</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="sbi">SBI</option>
+                    <option value="hdfc">HDFC</option>
+                    <option value="icici">ICICI</option>
+                    <option value="axis">Axis</option>
+                    <option value="nota">NOTA</option>
+                </select><br />
 
-            <label for="card">Credit Card Number:</label>
-            <input type="text" id="card" name="card" required placeholder="0000 1111 2222 3333" /><br />
+                <label for="card">Credit Card Number:</label>
+                <input type="text" id="card" name="card" required placeholder="0000 1111 2222 3333" /><br />
 
-            <label for="cvv">CVV:</label>
-            <input type="password" id="cvv" name="cvv" required placeholder="123" /><br />
+                <label for="cvv">CVV:</label>
+                <input type="password" id="cvv" name="cvv" required placeholder="123" /><br />
 
-            <label for="exp">Expiry Date:</label>
-            <input type="month" id="exp" name="exp" required /><br />
-        </fieldset>
+                <label for="exp">Expiry Date:</label>
+                <input type="month" id="exp" name="exp" required /><br />
+            </fieldset>
 
-        <!-- Verification -->
-        <fieldset>
-            <legend>Verification</legend>
-            <label for="pet">What was the name of your first pet?</label>
-            <input type="text" id="pet" name="pet" required placeholder="Rocky Bhai" /><br />
+            <!-- Verification -->
+            <fieldset>
+                <legend>Verification</legend>
+                <label for="pet">What was the name of your first pet?</label>
+                <input type="text" id="pet" name="pet" required placeholder="Rocky Bhai" /><br />
 
-            <label for="canon event">Where did your parents meet?</label>
-            <input type="text" id="canon event" name="canon event" required placeholder="The Great War" /><br />
-        </fieldset>
+                <label for="canon event">Where did your parents meet?</label>
+                <input type="text" id="canon event" name="canon event" required placeholder="The Great War" /><br />
+            </fieldset>
 
-        <hr />
+            <hr />
 
-        <!-- Extra Information -->
-        <fieldset>
-            <legend>Extra Information</legend>
+            <!-- Extra Information -->
+            <fieldset>
+                <legend>Extra Information</legend>
 
-            <label for="villain">Choose your villain name:</label>
-            <input list="villains" id="villain" name="villain" required placeholder="Dr. Heinz Doofenshmirtz" />
-            <datalist id="villains">
-                <option value="The GST Officer"></option>
-                <option value="The Tax Collector"></option>
-                <option value="Giga Nigga"></option>
-                <option value="The Spreadsheet Slayer"></option>
-                <option value="Platypus"></option>
-                <option value="PERRY the Platypus"></option>
-            </datalist><br />
+                <label for="villain">Choose your villain name:</label>
+                <input list="villains" id="villain" name="villain" required placeholder="Dr. Heinz Doofenshmirtz" />
+                <datalist id="villains">
+                    <option value="The GST Officer"></option>
+                    <option value="The Tax Collector"></option>
+                    <option value="Giga Nigga"></option>
+                    <option value="The Spreadsheet Slayer"></option>
+                    <option value="Platypus"></option>
+                    <option value="PERRY the Platypus"></option>
+                </datalist><br />
 
-            <label>Are you secretly an alien?</label><br />
-            <input type="radio" id="alien-yes" name="alien" value="yes" />
-            <label for="alien-yes">Yes</label>
-            <input type="radio" id="alien-no" name="alien" value="no" />
-            <label for="alien-no">No (but that's what an alien would say)</label><br />
+                <label>Are you secretly an alien?</label><br />
+                <input type="radio" id="alien-yes" name="alien" value="yes" />
+                <label for="alien-yes">Yes</label>
+                <input type="radio" id="alien-no" name="alien" value="no" />
+                <label for="alien-no">No (but that's what an alien would say)</label><br />
 
-            <label for="kidneys">How many kidneys do you have left?</label>
-            <input type="number" id="kidneys" name="kidneys" min="0" max="2" value="2" required /><br />
+                <label for="kidneys">How many kidneys do you have left?</label>
+                <input type="number" id="kidneys" name="kidneys" min="0" max="2" value="2" pattern="[0-2]{1}"
+                    required /><br />
 
-            <label for="ego">How big is your ego? (1-100)</label>
-            <input type="range" id="ego" name="ego" min="1" max="100" value="50" required /><br />
+                <label for="ego">How big is your ego? (1-100)</label>
+                <input type="range" id="ego" name="ego" min="1" max="100" value="50" required /><br />
 
-            <label>Check all crimes you've committed:</label><br />
-            <input type="checkbox" id="theft" name="crime" value="theft" />
-            <label for="theft">Theft</label><br />
-            <input type="checkbox" id="piracy" name="crime" value="piracy" />
-            <label for="piracy">Piracy (Arrr, matey! 🏴‍☠️)</label><br />
-            <input type="checkbox" id="tax" name="crime" value="tax" />
-            <label for="tax">Tax Fraud</label><br />
-            <input type="checkbox" id="hacking" name="crime" value="hacking" />
-            <label for="hacking">Cybercrime (Ctrl + Alt + Del your conscience)</label><br />
-            <input type="checkbox" id="bribery" name="crime" value="bribery" />
-            <label for="bribery">Bribery (Cash or crypto?)</label><br />
-            <input type="checkbox" id="money_laundering" name="crime" value="money_laundering" />
-            <label for="money_laundering">Money Laundering</label><br />
-            <input type="checkbox" id="smuggling" name="crime" value="smuggling" />
-            <label for="smuggling">Smuggling</label><br />
-            <input type="checkbox" id="identity_theft" name="crime" value="identity_theft" />
-            <label for="identity_theft">Identity Theft (Aye, that's my job !?)</label><br />
+                <label>Check all crimes you've committed:</label><br />
+                <input type="checkbox" id="theft" name="crime" value="theft" />
+                <label for="theft">Theft</label><br />
+                <input type="checkbox" id="piracy" name="crime" value="piracy" />
+                <label for="piracy">Piracy (Arrr, matey! 🏴‍☠️)</label><br />
+                <input type="checkbox" id="tax" name="crime" value="tax" />
+                <label for="tax">Tax Fraud</label><br />
+                <input type="checkbox" id="hacking" name="crime" value="hacking" />
+                <label for="hacking">Cybercrime (Ctrl + Alt + Del your conscience)</label><br />
+                <input type="checkbox" id="bribery" name="crime" value="bribery" />
+                <label for="bribery">Bribery (Cash or crypto?)</label><br />
+                <input type="checkbox" id="money_laundering" name="crime" value="money_laundering" />
+                <label for="money_laundering">Money Laundering</label><br />
+                <input type="checkbox" id="smuggling" name="crime" value="smuggling" />
+                <label for="smuggling">Smuggling</label><br />
+                <input type="checkbox" id="identity_theft" name="crime" value="identity_theft" />
+                <label for="identity_theft">Identity Theft (Aye, that's my job !?)</label><br />
 
-            <label for="heist">Preferred time for your next robbery:</label>
-            <input type="time" id="heist" name="heist" required /><br />
+                <label for="heist">Preferred time for your next robbery:</label>
+                <input type="time" id="heist" name="heist" required /><br />
 
-            <input type="hidden" name="hiddenData" value="This will never be seen hehe" /><br />
+                <input type="hidden" name="hiddenData" value="This will never be seen hehe" /><br />
 
-            <label for="wanted">Are you currently wanted by any government agency?</label>
-            <select id="wanted" name="wanted" required>
-                <option value="no" selected>Nope, I'm clean (but that's what a criminal would say)</option>
-                <option value="fbi">Yes, by the FBI</option>
-                <option value="cia">Yes, by the CIA</option>
-                <option value="nsa">Yes, by the NSA</option>
-                <option value="kgb">Yes, by a defunct agency (KGB - respect!)</option>
-                <option value="mi6">Yes, by MI6</option>
-                <option value="interpol">Yes, internationally (Interpol)</option>
-                <option value="illuminati">I work for the Illuminati</option>
-            </select><br />
+                <label for="wanted">Are you currently wanted by any government agency?</label>
+                <select id="wanted" name="wanted" required>
+                    <option value="no" selected>Nope, I'm clean (but that's what a criminal would say)</option>
+                    <option value="fbi">Yes, by the FBI</option>
+                    <option value="cia">Yes, by the CIA</option>
+                    <option value="nsa">Yes, by the NSA</option>
+                    <option value="kgb">Yes, by a defunct agency (KGB - respect!)</option>
+                    <option value="mi6">Yes, by MI6</option>
+                    <option value="interpol">Yes, internationally (Interpol)</option>
+                    <option value="illuminati">I work for the Illuminati</option>
+                </select><br />
 
-            <label for="bribe">Preferred bribe envelope color (totally optional, but highly encouraged):</label>
-            <input type="color" id="bribe" name="bribe" value="#ffcc00" /><br />
+                <label for="bribe">Preferred bribe envelope color (totally optional, but highly encouraged):</label>
+                <input type="color" id="bribe" name="bribe" value="#ffcc00" /><br />
 
-            <label for="soul">Upload a signed contract selling your soul (for legal
-                purposes):</label>
-            <input type="file" id="soul" name="soul" /><br />
+                <label for="soul">Upload a signed contract selling your soul (for legal
+                    purposes):</label>
+                <input type="file" id="soul" name="soul" /><br />
 
-            <label for="mood">How do you feel about giving us all this info?</label>
-            <select id="mood" name="mood" required>
-                <option value="happy">😃 Happy to be scammed!</option>
-                <option value="confused">😕 Slightly suspicious...</option>
-                <option value="insane">🤪 I'm going insane</option>
-                <option value="crying">😭 Regretting all my life choices</option>
-                <option value="angry">😡 Calling the police</option>
-            </select><br />
-        </fieldset>
+                <label for="mood">How do you feel about giving us all this info?</label>
+                <select id="mood" name="mood" required>
+                    <option value="happy">😃 Happy to be scammed!</option>
+                    <option value="confused">😕 Slightly suspicious...</option>
+                    <option value="insane">🤪 I'm going insane</option>
+                    <option value="crying">😭 Regretting all my life choices</option>
+                    <option value="angry">😡 Calling the police</option>
+                </select><br />
+            </fieldset>
 
-        <!-- Final Confession -->
-        <fieldset>
-            <legend>Final Confession</legend>
-            <label for="confession">Your Darkest Secret:</label>
-            <textarea id="confession" name="confession" rows="4" cols="50"
-                placeholder="Tell us everything... Don't worry I'll only use this for blackmailing & forming bonds"></textarea><br />
-        </fieldset>
+            <!-- Final Confession -->
+            <fieldset>
+                <legend>Final Confession</legend>
+                <label for="confession">Your Darkest Secret:</label>
+                <textarea id="confession" name="confession" rows="4" cols="50"
+                    placeholder="Tell us everything... Don't worry I'll only use this for blackmailing & forming bonds"></textarea><br />
+            </fieldset>
 
-        <!-- Consent and Feedback -->
-        <fieldset>
-            <legend>Consent and Feedback</legend>
-            <label for="consent">
-                <input type="checkbox" id="consent" name="consent" required>
-                I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a> and <a href="privacy.html"
-                    target="_blank">Privacy Policy</a>.
-            </label>
-            <br /><br />
-            <label for="feedback">Additional Feedback (Optional):</label><br />
-            <textarea id="feedback" name="feedback" rows="3" cols="50"
-                placeholder="Let us know your thoughts..."></textarea>
-        </fieldset>
+            <!-- Consent and Feedback -->
+            <fieldset>
+                <legend>Consent and Feedback</legend>
+                <label for="consent">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a> and <a
+                        href="privacy.html" target="_blank">Privacy Policy</a>.
+                </label>
+                <br /><br />
+                <label for="feedback">Additional Feedback (Optional):</label><br />
+                <textarea id="feedback" name="feedback" rows="3" cols="50"
+                    placeholder="Let us know your thoughts..."></textarea>
+            </fieldset>
 
-        <!-- Submission -->
-        <input type="reset" value="Reset" onclick="alert('You\'re Backing Out :c');" />
-        <input type="submit" value="Submit"
-            onclick="alert('Thanks! I\'ll be in touch... or watching... or impersonating? 😈 Maybe don\'t dox yourself next time? 😆');" />
-    </form>
+            <!-- Submission -->
+            <input type="reset" value="Reset" onclick="alert('You\'re Backing Out :c');" />
+            <input type="submit" value="Submit"
+                onclick="alert('Thanks! I\'ll be in touch... or watching... or impersonating? 😈 Maybe don\'t dox yourself next time? 😆');" />
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>
