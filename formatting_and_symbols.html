@@ -8,10 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/globe.png" type="image/png" />
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/458fe55474.js" crossorigin="anonymous"></script>
     <title>Formatting & Symbols</title>
 </head>
 
 <body>
+    <button id="theme-toggle" aria-label="Toggle dark/light theme">
+        <i class="fa-regular fa-moon light-icon"></i>
+        <i class="fa-regular fa-sun dark-icon"></i>
+    </button>
+
     <h1>Text formatting in HTML</h1>
     <p>&rarr; normal</p>
     <p>&rarr; <b>bold</b></p>
@@ -37,6 +43,13 @@
     <p>&copy; &reg; &trade; "intellectual property symbols"</p>
     <p>&larr; &rarr; &uarr; &darr; "arrows symbols"</p>
     <p>&clubs; &spades; &hearts; &diams; "card symbols"</p>
+
+    <button id="scroll-to-top" aria-label="Scroll to top">
+        <i class="fa-regular fa-circle-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
