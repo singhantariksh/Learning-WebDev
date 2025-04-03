@@ -15,7 +15,10 @@
 	<nav class="navbar">
 		<div class="nav-container">
 			<div class="logo">
-				<a href="index.html">Antariksh Singh</a>
+				<a href="index.html">
+					<div class="icon-wrapper icon-globe"></div>
+					<span class="logo-text">Embrace Absurdity</span>
+				</a>
 			</div>
 			<ul class="nav-links">
 				<li><a href="what_is_web_development.html">Web Dev</a></li>
@@ -24,8 +27,8 @@
 				<li><a href="song.html">Showcase</a></li>
 			</ul>
 			<button id="theme-toggle" aria-label="Toggle dark/light theme">
-				<img class="light-icon" src="icons/moon.svg"></img>
-				<img class="dark-icon" src="icons/sun.svg"></img>
+				<div class="icon-wrapper icon-moon light-icon"></div>
+				<div class="icon-wrapper icon-sun dark-icon"></div>
 			</button>
 		</div>
 	</nav>
@@ -37,25 +40,29 @@
 	<main>
 		<h2>Welcome to my first ever webpage!</h2>
 
-		<p>
-			So Hello everyone, I'm just a guy learning web development whenever I feel like it<br />
-		</p>
-
 		<hr />
 
 		<section id="about-me">
 			<h3>About Me</h3>
-			<p>Hi there! I'm Antariksh Singh, a web development enthusiast. This is where I'm documenting my journey as
-				I learn and build various web projects.</p>
-			<p>When I'm not coding, I enjoy [your hobbies/interests here]. Feel free to connect with me through any of
-				the social links below!</p>
+
+			<p>Hi there! I'm Antariksh Singh, a technology enthusiast.
+				I'm just a guy learning web development wheneverI feel like it. </p>
+			<p>This is where I'm documenting my journey as I learn and build various web projects.</p>
+
+			<p>I'm currently a student at SSTC, Bhilai, Chattisgrah, India.
+				I am pursuing a B.Tech in Computer Science and Engineering.</p>
+
+			<p>When I'm not coding, I enjoy Gaming & Music, pretty niche I know.
+				Feel free to connect with me through any of the social links below!</p>
+
+			<p>Thanks for stopping by!</p>
 		</section>
 
 		<hr />
 
 		<a href="https://youtu.be/dQw4w9WgXcQ?si=nzh6Hd6_0nSnSc6Y" target="_blank"
 			title="does nothing suspicious (Not Not Safe For Work)">
-			<button id="rickroll">Click Me</button>
+			<button class="btn" id="rickroll">Click Me</button>
 		</a>
 
 	</main>
@@ -64,23 +71,23 @@
 		<p>Author: Antariksh Singh</p>
 
 		<a href="https://www.linkedin.com/in/antariksh-singh-37b496315/" target="_blank" title="my linked in">
-			<img class="social-icons" src="icons/linkedin.svg"></img>
+			<div class="icon-wrapper icon-linkedin social-icons"></div>
 		</a>
 
 		<a href="https://www.instagram.com/antarikshsingh.07/" target="_blank" title="my instagram">
-			<img class="social-icons" src="icons/instagram.svg"></img>
+			<div class="icon-wrapper icon-instagram social-icons"></div>
 		</a>
 
 		<a href="https://github.com/Antariksh-Singh-07/" target="_blank" title="my github">
-			<img class="social-icons" src="icons/github.svg"></img>
+			<div class="icon-wrapper icon-github social-icons"></div>
 		</a>
 
 		<a href="https://x.com/AntarikshSingh_/" target="_blank" title="my twitter">
-			<img class="social-icons" src="icons/twitter.svg"></img>
+			<div class="icon-wrapper icon-twitter social-icons"></div>
 		</a>
 
 		<a href="mailto:antarikshsingh212@gmail.com" target="_blank" title="my email">
-			<img class="social-icons" src="icons/at-sign.svg"></img>
+			<div class="icon-wrapper icon-email social-icons"></div>
 		</a>
 
 		<p>&copy; 2025 Embrace Absurdity Inc.</p>
@@ -89,7 +96,7 @@
 	</footer>
 
 	<button id="scroll-to-top" aria-label="Scroll to top">
-		<img class="to_top" src="icons/chevrons-up.svg"></img>
+		<div class="icon-wrapper icon-chevrons-up"></div>
 	</button>
 
 	<script src="script.js"></script>

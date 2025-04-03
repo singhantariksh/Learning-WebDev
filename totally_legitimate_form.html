@@ -12,10 +12,26 @@
 </head>
 
 <body>
-    <button id="theme-toggle" aria-label="Toggle dark/light theme">
-        <img class="light-icon" src="icons/moon.svg"></img>
-        <img class="dark-icon" src="icons/sun.svg"></img>
-    </button>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="icon-wrapper icon-globe"></div>
+                    <span class="logo-text">Embrace Absurdity</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="what_is_web_development.html">Web Dev</a></li>
+                <li><a href="totally_legitimate_form.html">Form</a></li>
+                <!-- TODO make a showcase website when you have more websites to show and replace song.html with it -->
+                <li><a href="song.html">Showcase</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle dark/light theme">
+                <div class="icon-wrapper icon-moon light-icon"></div>
+                <div class="icon-wrapper icon-sun dark-icon"></div>
+            </button>
+        </div>
+    </nav>
 
     <header>
         <h1>Totally Legitimate Information Collection Form!</h1>
@@ -221,8 +237,8 @@
             </fieldset>
 
             <!-- Submission -->
-            <input type="reset" value="Reset" onclick="alert('You\'re Backing Out :c');" />
-            <input type="submit" value="Submit"
+            <input class="btn" type="reset" value="Reset" onclick="alert('You\'re Backing Out :c');" />
+            <input class="btn" type="submit" value="Submit"
                 onclick="alert('Thanks! I\'ll be in touch... or watching... or impersonating? 😈 Maybe don\'t dox yourself next time? 😆');" />
         </form>
     </main>
@@ -232,7 +248,7 @@
     </footer>
 
     <button id="scroll-to-top" aria-label="Scroll to top">
-        <img class="to_top" src="icons/chevrons-up.svg"></img>
+        <div class="icon-wrapper icon-chevrons-up"></div>
     </button>
 
     <script src="script.js"></script>

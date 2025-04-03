@@ -12,63 +12,86 @@
 </head>
 
 <body>
-    <button id="theme-toggle" aria-label="Toggle dark/light theme">
-        <img class="light-icon" src="icons/moon.svg"></img>
-        <img class="dark-icon" src="icons/sun.svg"></img>
-    </button>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="icon-wrapper icon-globe"></div>
+                    <span class="logo-text">Embrace Absurdity</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="what_is_web_development.html">Web Dev</a></li>
+                <li><a href="totally_legitimate_form.html">Form</a></li>
+                <!-- TODO make a showcase website when you have more websites to show and replace song.html with it -->
+                <li><a href="song.html">Showcase</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle dark/light theme">
+                <div class="icon-wrapper icon-moon light-icon"></div>
+                <div class="icon-wrapper icon-sun dark-icon"></div>
+            </button>
+        </div>
+    </nav>
 
     <header>
         <h1>Comprehensive Web Development Guide</h1>
     </header>
 
     <main>
-        <h2>1. Web Development Roles & Responsibilities</h2>
+        <fieldset>
+            <legend>
+                <h2>1. Web Development Roles & Responsibilities</h2>
+            </legend>
 
-        <h3>1.1 Front End Developer</h3>
-        <p>Front end developers focus on what users see and interact with directly. They build the user interface and
-            ensure a smooth user experience across different devices and browsers.</p>
+            <h3>1.1 Front End Developer</h3>
+            <p>Front end developers focus on what users see and interact with directly. They build the user
+                interface and
+                ensure a smooth user experience across different devices and browsers.</p>
 
-        <h4>Core Skills:</h4>
-        <ul>
-            <li>Creating visual elements using HTML, CSS, and JavaScript</li>
-            <li>Implementing responsive designs that work on all devices</li>
-            <li>Optimizing site performance and load times</li>
-            <li>Building interactive user interfaces</li>
-        </ul>
+            <h4>Core Skills:</h4>
+            <ul>
+                <li>Creating visual elements using HTML, CSS, and JavaScript</li>
+                <li>Implementing responsive designs that work on all devices</li>
+                <li>Optimizing site performance and load times</li>
+                <li>Building interactive user interfaces</li>
+            </ul>
 
-        <h3>1.2 Back End Developer</h3>
-        <p>Back end developers work on server-side logic, databases, and application architecture. They create the
-            systems that power websites and applications behind the scenes.</p>
+            <h3>1.2 Back End Developer</h3>
+            <p>Back end developers work on server-side logic, databases, and application architecture. They create
+                the
+                systems that power websites and applications behind the scenes.</p>
 
-        <h4>Core Skills:</h4>
-        <ul>
-            <li>Developing server-side logic using languages like Python, PHP, or Node.js</li>
-            <li>Designing and managing databases</li>
-            <li>Creating and integrating APIs</li>
-            <li>Implementing security measures and authentication systems</li>
-        </ul>
+            <h4>Core Skills:</h4>
+            <ul>
+                <li>Developing server-side logic using languages like Python, PHP, or Node.js</li>
+                <li>Designing and managing databases</li>
+                <li>Creating and integrating APIs</li>
+                <li>Implementing security measures and authentication systems</li>
+            </ul>
 
-        <h3>1.3 Full Stack Developer</h3>
-        <p>Full stack developers work across both front and back end technologies. They understand the complete web
-            development process and can build end-to-end solutions.</p>
+            <h3>1.3 Full Stack Developer</h3>
+            <p>Full stack developers work across both front and back end technologies. They understand the complete
+                web
+                development process and can build end-to-end solutions.</p>
 
-        <h4>Core Skills:</h4>
-        <ul>
-            <li>Proficiency in both front end and back end technologies</li>
-            <li>Understanding of how different parts of a web application interact</li>
-            <li>Ability to design complete architecture for web applications</li>
-            <li>Knowledge of deployment and DevOps processes</li>
-        </ul>
+            <h4>Core Skills:</h4>
+            <ul>
+                <li>Proficiency in both front end and back end technologies</li>
+                <li>Understanding of how different parts of a web application interact</li>
+                <li>Ability to design complete architecture for web applications</li>
+                <li>Knowledge of deployment and DevOps processes</li>
+            </ul>
 
-        <h3>1.4 Specialized Web Development Roles</h3>
-        <p>Beyond the common roles, the industry includes many specialized positions:</p>
-        <ul>
-            <li>UI/UX Designers: Focus on user interface design and user experience</li>
-            <li>Web Accessibility Specialists: Ensure websites work for people with disabilities</li>
-            <li>DevOps Engineers: Manage deployment, infrastructure, and operations</li>
-            <li>QA Testers: Test applications for bugs and usability issues</li>
-            <li>WebGL/3D Specialists: Create advanced 3D visualizations for the web</li>
-        </ul>
+            <h3>1.4 Specialized Web Development Roles</h3>
+            <p>Beyond the common roles, the industry includes many specialized positions:</p>
+            <ul>
+                <li>UI/UX Designers: Focus on user interface design and user experience</li>
+                <li>Web Accessibility Specialists: Ensure websites work for people with disabilities</li>
+                <li>DevOps Engineers: Manage deployment, infrastructure, and operations</li>
+                <li>QA Testers: Test applications for bugs and usability issues</li>
+                <li>WebGL/3D Specialists: Create advanced 3D visualizations for the web</li>
+            </ul>
+        </fieldset>
 
         <hr />
 
@@ -104,17 +127,21 @@
 
         <h3>2.3 CSS Frameworks & Utilities</h3>
         <ul>
-            <li><strong>Tailwind CSS:</strong> A utility-first CSS framework for rapidly building custom designs without
+            <li><strong>Tailwind CSS:</strong> A utility-first CSS framework for rapidly building custom designs
+                without
                 leaving your HTML.</li>
-            <li><strong>Sass/SCSS:</strong> CSS preprocessors that add features like variables, nesting, and mixins to
+            <li><strong>Sass/SCSS:</strong> CSS preprocessors that add features like variables, nesting, and
+                mixins to
                 standard CSS.</li>
-            <li><strong>CSS Grid & Flexbox:</strong> Modern CSS layout systems for creating complex, responsive layouts.
+            <li><strong>CSS Grid & Flexbox:</strong> Modern CSS layout systems for creating complex, responsive
+                layouts.
             </li>
         </ul>
 
         <h3>2.4 State Management</h3>
         <ul>
-            <li><strong>Redux:</strong> A predictable state container for JavaScript apps, commonly used with React.
+            <li><strong>Redux:</strong> A predictable state container for JavaScript apps, commonly used with
+                React.
             </li>
             <li><strong>MobX:</strong> A simple, scalable state management system.</li>
             <li><strong>Context API:</strong> React's built-in state management feature.</li>
@@ -142,16 +169,19 @@
 
         <h3>3.2 Back End Frameworks</h3>
         <ul>
-            <li><strong>Django:</strong> A high-level Python web framework encouraging rapid development and clean
+            <li><strong>Django:</strong> A high-level Python web framework encouraging rapid development and
+                clean
                 design.</li>
-            <li><strong>Ruby on Rails:</strong> An open-source web framework written in Ruby following the MVC pattern.
+            <li><strong>Ruby on Rails:</strong> An open-source web framework written in Ruby following the MVC
+                pattern.
             </li>
             <li><strong>Express.js:</strong> A minimal and flexible Node.js web application framework.</li>
             <li><strong>Spring Boot:</strong> A Java-based framework for creating stand-alone, production-grade
                 applications.</li>
             <li><strong>Laravel:</strong> A PHP framework with expressive, elegant syntax for web application
                 development.</li>
-            <li><strong>Flask:</strong> A lightweight Python web framework focusing on simplicity and flexibility.</li>
+            <li><strong>Flask:</strong> A lightweight Python web framework focusing on simplicity and
+                flexibility.</li>
             <li><strong>ASP.NET Core:</strong> Microsoft's cross-platform framework for building modern web
                 applications.</li>
         </ul>
@@ -160,7 +190,8 @@
 
         <h4>Relational Databases</h4>
         <ul>
-            <li><strong>MySQL:</strong> An open-source relational database management system using SQL, widely used in
+            <li><strong>MySQL:</strong> An open-source relational database management system using SQL, widely
+                used in
                 web applications.</li>
             <li><strong>PostgreSQL:</strong> A powerful, open-source object-relational database system known for
                 reliability and performance.</li>
@@ -170,20 +201,25 @@
 
         <h4>NoSQL Databases</h4>
         <ul>
-            <li><strong>MongoDB:</strong> A document-oriented database program classified as NoSQL using JSON-like
+            <li><strong>MongoDB:</strong> A document-oriented database program classified as NoSQL using
+                JSON-like
                 documents.</li>
-            <li><strong>Redis:</strong> An in-memory data structure store used as a database, cache, and message broker.
+            <li><strong>Redis:</strong> An in-memory data structure store used as a database, cache, and message
+                broker.
             </li>
-            <li><strong>Cassandra:</strong> A distributed NoSQL database designed for handling large amounts of data.
+            <li><strong>Cassandra:</strong> A distributed NoSQL database designed for handling large amounts of
+                data.
             </li>
-            <li><strong>Firebase:</strong> Google's platform for mobile and web application development with real-time
+            <li><strong>Firebase:</strong> Google's platform for mobile and web application development with
+                real-time
                 database capabilities.</li>
         </ul>
 
         <h3>3.4 API Development</h3>
         <ul>
             <li><strong>REST API:</strong> Architectural style for designing networked applications.</li>
-            <li><strong>GraphQL:</strong> A query language for APIs and a runtime for fulfilling those queries.</li>
+            <li><strong>GraphQL:</strong> A query language for APIs and a runtime for fulfilling those queries.
+            </li>
             <li><strong>gRPC:</strong> A high-performance, open-source universal RPC framework.</li>
             <li><strong>Swagger/OpenAPI:</strong> Tools for designing, building, and documenting APIs.</li>
         </ul>
@@ -194,7 +230,8 @@
 
         <h3>4.1 Traditional Stacks</h3>
         <ul>
-            <li><strong>LAMP Stack:</strong> Linux (operating system), Apache (web server), MySQL (database), and PHP
+            <li><strong>LAMP Stack:</strong> Linux (operating system), Apache (web server), MySQL (database),
+                and PHP
                 (programming language).</li>
             <li><strong>LEMP Stack:</strong> Linux, NGINX (web server), MySQL, and PHP/Python/Perl.</li>
             <li><strong>WAMP/MAMP:</strong> Windows/Mac versions of the LAMP stack for local development.</li>
@@ -209,13 +246,17 @@
 
         <h3>4.3 Modern Architecture Patterns</h3>
         <ul>
-            <li><strong>JAMstack:</strong> JavaScript, APIs, and Markup – a modern architecture pattern separating the
+            <li><strong>JAMstack:</strong> JavaScript, APIs, and Markup – a modern architecture pattern
+                separating the
                 web experience layer from business logic.</li>
-            <li><strong>Serverless Stack:</strong> Uses cloud services like AWS Lambda or Azure Functions, eliminating
+            <li><strong>Serverless Stack:</strong> Uses cloud services like AWS Lambda or Azure Functions,
+                eliminating
                 the need to manage server infrastructure.</li>
-            <li><strong>Microservices Architecture:</strong> Designing applications as collections of loosely coupled
+            <li><strong>Microservices Architecture:</strong> Designing applications as collections of loosely
+                coupled
                 services.</li>
-            <li><strong>Headless CMS Architecture:</strong> Separates content management from presentation, allowing
+            <li><strong>Headless CMS Architecture:</strong> Separates content management from presentation,
+                allowing
                 flexibility in content delivery.</li>
         </ul>
 
@@ -237,7 +278,8 @@
         <h3>5.2 Version Control</h3>
         <ul>
             <li><strong>Git:</strong> Distributed version control system for tracking changes.</li>
-            <li><strong>GitHub/GitLab/Bitbucket:</strong> Platforms for hosting and collaborating on Git repositories.
+            <li><strong>GitHub/GitLab/Bitbucket:</strong> Platforms for hosting and collaborating on Git
+                repositories.
             </li>
             <li><strong>Branching Strategies:</strong> Git Flow, GitHub Flow, and other workflows for team
                 collaboration.</li>
@@ -256,14 +298,16 @@
             <li><strong>Testing Frameworks:</strong> Jest, Mocha, Jasmine, Pytest, PHPUnit.</li>
             <li><strong>End-to-End Testing:</strong> Cypress, Selenium, Puppeteer.</li>
             <li><strong>Test-Driven Development (TDD):</strong> Writing tests before code.</li>
-            <li><strong>Behavior-Driven Development (BDD):</strong> Focusing on business behavior in testing.</li>
+            <li><strong>Behavior-Driven Development (BDD):</strong> Focusing on business behavior in testing.
+            </li>
             <li><strong>Continuous Integration:</strong> Automatically testing code when changes are made.</li>
         </ul>
 
         <h3>5.5 DevOps & Deployment</h3>
         <ul>
             <li><strong>CI/CD Pipelines:</strong> Jenkins, GitHub Actions, GitLab CI, CircleCI.</li>
-            <li><strong>Containerization:</strong> Docker, Kubernetes for consistent deployment environments.</li>
+            <li><strong>Containerization:</strong> Docker, Kubernetes for consistent deployment environments.
+            </li>
             <li><strong>Cloud Providers:</strong> AWS, Azure, Google Cloud Platform for hosting.</li>
             <li><strong>Static Site Hosts:</strong> Netlify, Vercel, GitHub Pages.</li>
             <li><strong>Serverless Platforms:</strong> AWS Lambda, Azure Functions, Google Cloud Functions.</li>
@@ -275,13 +319,16 @@
 
         <h3>6.1 Performance Optimization</h3>
         <ul>
-            <li><strong>Core Web Vitals:</strong> Google's standardized metrics for user experience (LCP, FID, CLS).
+            <li><strong>Core Web Vitals:</strong> Google's standardized metrics for user experience (LCP, FID,
+                CLS).
             </li>
             <li><strong>Lazy Loading:</strong> Loading resources only when needed.</li>
             <li><strong>Code Splitting:</strong> Breaking code into smaller chunks for improved loading.</li>
             <li><strong>Caching Strategies:</strong> Browser caching, CDN caching, service workers.</li>
-            <li><strong>Image Optimization:</strong> Properly sizing and compressing images, using modern formats.</li>
-            <li><strong>Content Delivery Networks (CDNs):</strong> Distributing content geographically closer to users.
+            <li><strong>Image Optimization:</strong> Properly sizing and compressing images, using modern
+                formats.</li>
+            <li><strong>Content Delivery Networks (CDNs):</strong> Distributing content geographically closer to
+                users.
             </li>
         </ul>
 
@@ -297,28 +344,35 @@
                     <li>Security Headers</li>
                 </ul>
             </li>
-            <li><strong>Content Security Policy (CSP):</strong> Preventing attacks by controlling resource execution.
+            <li><strong>Content Security Policy (CSP):</strong> Preventing attacks by controlling resource
+                execution.
             </li>
         </ul>
 
         <h3>6.3 Web Accessibility (a11y)</h3>
         <ul>
-            <li><strong>WCAG Guidelines:</strong> Web Content Accessibility Guidelines for making content accessible.
+            <li><strong>WCAG Guidelines:</strong> Web Content Accessibility Guidelines for making content
+                accessible.
             </li>
             <li><strong>Semantic HTML:</strong> Using proper HTML elements for their intended purpose.</li>
             <li><strong>Keyboard Navigation:</strong> Ensuring sites can be navigated without a mouse.</li>
-            <li><strong>Screen Reader Compatibility:</strong> Making content accessible to screen reader users.</li>
+            <li><strong>Screen Reader Compatibility:</strong> Making content accessible to screen reader users.
+            </li>
             <li><strong>Color Contrast & Typography:</strong> Ensuring text is readable for all users.</li>
         </ul>
 
         <h3>6.4 Responsive & Adaptive Design</h3>
         <ul>
-            <li><strong>Mobile-First Approach:</strong> Designing for small screens first, then enhancing for larger
+            <li><strong>Mobile-First Approach:</strong> Designing for small screens first, then enhancing for
+                larger
                 ones.</li>
-            <li><strong>Media Queries:</strong> CSS technique to apply styles based on device characteristics.</li>
-            <li><strong>Responsive Images:</strong> Optimizing images for different screen sizes and resolutions.</li>
+            <li><strong>Media Queries:</strong> CSS technique to apply styles based on device characteristics.
+            </li>
+            <li><strong>Responsive Images:</strong> Optimizing images for different screen sizes and
+                resolutions.</li>
             <li><strong>Fluid Layouts:</strong> Creating layouts that adapt to any screen size.</li>
-            <li><strong>Progressive Enhancement:</strong> Building a basic experience that works everywhere, then adding
+            <li><strong>Progressive Enhancement:</strong> Building a basic experience that works everywhere,
+                then adding
                 features for modern browsers.</li>
         </ul>
 
@@ -326,7 +380,8 @@
         <ul>
             <li><strong>Service Workers:</strong> Scripts that enable offline functionality.</li>
             <li><strong>Web App Manifest:</strong> JSON file that controls how the app appears to users.</li>
-            <li><strong>Push Notifications:</strong> Engaging users with updates even when the browser is closed.</li>
+            <li><strong>Push Notifications:</strong> Engaging users with updates even when the browser is
+                closed.</li>
             <li><strong>App-Like Experience:</strong> Creating web applications that feel like native apps.</li>
         </ul>
 
@@ -335,11 +390,13 @@
         <h2>7. Emerging Web Technologies</h2>
 
         <h3>7.1 WebAssembly (WASM)</h3>
-        <p>A binary instruction format enabling high-performance applications in browsers at near-native speed, allowing
+        <p>A binary instruction format enabling high-performance applications in browsers at near-native speed,
+            allowing
             languages like C, C++, and Rust to build complex web applications.</p>
 
         <h3>7.2 Augmented & Virtual Reality for Web</h3>
-        <p>Web-based AR/VR experiences through WebXR and related technologies, creating immersive browser-based content
+        <p>Web-based AR/VR experiences through WebXR and related technologies, creating immersive browser-based
+            content
             without specialized apps.</p>
 
         <h3>7.3 Web3 & Blockchain Integration</h3>
@@ -354,7 +411,8 @@
         </ul>
 
         <h3>7.5 Edge Computing</h3>
-        <p>Moving computation closer to data sources to improve response times and save bandwidth, using services like
+        <p>Moving computation closer to data sources to improve response times and save bandwidth, using
+            services like
             Cloudflare Workers and AWS Lambda@Edge.</p>
 
         <hr />
@@ -363,18 +421,22 @@
 
         <h3>8.1 Development Methodologies</h3>
         <ul>
-            <li><strong>Agile Development:</strong> Iterative approach to project management and software development.
+            <li><strong>Agile Development:</strong> Iterative approach to project management and software
+                development.
             </li>
-            <li><strong>Scrum Framework:</strong> Specific implementation of Agile with sprints and specific roles.</li>
+            <li><strong>Scrum Framework:</strong> Specific implementation of Agile with sprints and specific
+                roles.</li>
             <li><strong>Kanban:</strong> Visual workflow management method.</li>
             <li><strong>Waterfall:</strong> Sequential design process.</li>
         </ul>
 
         <h3>8.2 Web Standards & Organizations</h3>
         <ul>
-            <li><strong>World Wide Web Consortium (W3C):</strong> Main international standards organization for the web.
+            <li><strong>World Wide Web Consortium (W3C):</strong> Main international standards organization for
+                the web.
             </li>
-            <li><strong>WHATWG:</strong> Web Hypertext Application Technology Working Group, maintaining HTML and
+            <li><strong>WHATWG:</strong> Web Hypertext Application Technology Working Group, maintaining HTML
+                and
                 related technologies.</li>
             <li><strong>ECMA International:</strong> Standards organization for JavaScript (ECMAScript).</li>
             <li><strong>IETF:</strong> Internet Engineering Task Force, developing Internet standards.</li>
@@ -385,7 +447,8 @@
             <li><strong>Documentation:</strong> MDN Web Docs, W3Schools, official framework documentation.</li>
             <li><strong>Learning Platforms:</strong> freeCodeCamp, Codecademy, Frontend Masters, Udemy.</li>
             <li><strong>Community Resources:</strong> Stack Overflow, GitHub repositories, tech blogs.</li>
-            <li><strong>Podcasts & YouTube Channels:</strong> Syntax, JavaScript Jabber, Traversy Media, The Net Ninja.
+            <li><strong>Podcasts & YouTube Channels:</strong> Syntax, JavaScript Jabber, Traversy Media, The Net
+                Ninja.
             </li>
         </ul>
 
@@ -395,7 +458,8 @@
             <li><strong>Contributing to Open Source:</strong> Participating in the developer community.</li>
             <li><strong>Networking:</strong> Joining developer communities and attending events.</li>
             <li><strong>Continuing Education:</strong> Keeping up with rapidly evolving technologies.</li>
-            <li><strong>Technical Interviews:</strong> Preparing for coding challenges and system design questions.</li>
+            <li><strong>Technical Interviews:</strong> Preparing for coding challenges and system design
+                questions.</li>
         </ul>
 
         <hr />
@@ -408,7 +472,8 @@
             <li><strong>Subscriptions & Memberships:</strong> Recurring revenue models.</li>
             <li><strong>E-commerce Integration:</strong> Selling products directly.</li>
             <li><strong>Freemium Models:</strong> Basic features free, premium features paid.</li>
-            <li><strong>SaaS (Software as a Service):</strong> Offering web applications for a subscription fee.</li>
+            <li><strong>SaaS (Software as a Service):</strong> Offering web applications for a subscription fee.
+            </li>
         </ul>
 
         <h3>9.2 Analytics & User Metrics</h3>
@@ -416,15 +481,18 @@
             <li><strong>Web Analytics Tools:</strong> Google Analytics, Matomo, Plausible.</li>
             <li><strong>User Behavior Analysis:</strong> Heatmaps, session recordings.</li>
             <li><strong>Conversion Rate Optimization:</strong> Improving site performance based on data.</li>
-            <li><strong>A/B Testing:</strong> Comparing variations of web pages to determine which performs better.</li>
+            <li><strong>A/B Testing:</strong> Comparing variations of web pages to determine which performs
+                better.</li>
         </ul>
 
         <h3>9.3 Ethical Web Development</h3>
         <ul>
             <li><strong>Privacy Considerations:</strong> GDPR, CCPA, and other privacy regulations.</li>
-            <li><strong>Data Protection:</strong> Securing user data and being transparent about data usage.</li>
+            <li><strong>Data Protection:</strong> Securing user data and being transparent about data usage.
+            </li>
             <li><strong>Digital Accessibility:</strong> Creating inclusive experiences for diverse users.</li>
-            <li><strong>Environmental Impact:</strong> Optimizing for energy efficiency and reduced carbon footprint.
+            <li><strong>Environmental Impact:</strong> Optimizing for energy efficiency and reduced carbon
+                footprint.
             </li>
             <li><strong>Content Moderation:</strong> Ensuring safe and appropriate user-generated content.</li>
         </ul>
@@ -432,9 +500,12 @@
         <h3>9.4 Internationalization & Localization</h3>
         <ul>
             <li><strong>Multilingual Support:</strong> Implementing multiple language options.</li>
-            <li><strong>Cultural Considerations:</strong> Adapting design and content for different cultures.</li>
-            <li><strong>Right-to-Left (RTL) Support:</strong> Accommodating languages like Arabic and Hebrew.</li>
-            <li><strong>Date, Time, and Currency Formatting:</strong> Displaying information appropriate to the user's
+            <li><strong>Cultural Considerations:</strong> Adapting design and content for different cultures.
+            </li>
+            <li><strong>Right-to-Left (RTL) Support:</strong> Accommodating languages like Arabic and Hebrew.
+            </li>
+            <li><strong>Date, Time, and Currency Formatting:</strong> Displaying information appropriate to the
+                user's
                 location.</li>
         </ul>
     </main>
@@ -444,7 +515,7 @@
     </footer>
 
     <button id="scroll-to-top" aria-label="Scroll to top">
-        <img class="to_top" src="icons/chevrons-up.svg"></img>
+        <div class="icon-wrapper icon-chevrons-up"></div>
     </button>
 
     <script src="script.js"></script>
