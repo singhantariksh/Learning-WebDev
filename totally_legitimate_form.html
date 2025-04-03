@@ -8,14 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/globe.png" type="image/png" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script src="https://kit.fontawesome.com/458fe55474.js" crossorigin="anonymous"></script>
     <title>Totally Legitimate Form</title>
 </head>
 
 <body>
     <button id="theme-toggle" aria-label="Toggle dark/light theme">
-        <i class="fa-regular fa-moon light-icon"></i>
-        <i class="fa-regular fa-sun dark-icon"></i>
+        <img class="light-icon" src="icons/moon.svg"></img>
+        <img class="dark-icon" src="icons/sun.svg"></img>
     </button>
 
     <header>
@@ -34,6 +33,24 @@
 
                 <label for="dob">Date of Birth:</label>
                 <input type="date" id="dob" name="dob" required /><br />
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="none" selected disabled hidden>Choose your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="croissant">Croissant</option>
+                    <option value="platypus">Platypus</option>
+                    <option value="mermaid">Mermaid</option>
+                    <option value="merman">Merman</option>
+                    <option value="not_say">Rather Not Say</option>
+                    <option value="other">Other...</option>
+                </select><br />
+
+                <div id="otherInputContainer" style="display: none; margin-top: 10px;">
+                    <label for="other">Please specify:</label>
+                    <input type="text" id="other" name="other" placeholder="Your gender">
+                </div>
 
                 <label for="birthplace">Where were you born?</label>
                 <input type="text" id="birthplace" name="birthplace" required placeholder="South Delhi" /><br />
@@ -215,7 +232,7 @@
     </footer>
 
     <button id="scroll-to-top" aria-label="Scroll to top">
-        <i class="fa-regular fa-circle-up"></i>
+        <img class="to_top" src="icons/chevrons-up.svg"></img>
     </button>
 
     <script src="script.js"></script>

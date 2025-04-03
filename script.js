@@ -44,4 +44,17 @@ document.addEventListener('DOMContentLoaded', function () {
             behavior: 'smooth'
         });
     });
+
+    const genderSelect = document.getElementById('gender');
+    const otherInputContainer = document.getElementById('otherInputContainer');
+
+    genderSelect.addEventListener('change', function () {
+        if (this.value === 'other') {
+            otherInputContainer.style.display = 'block';
+        } else {
+            otherInputContainer.style.display = 'none';
+            document.getElementById('other').value = '';
+        }
+    });
 });
+
