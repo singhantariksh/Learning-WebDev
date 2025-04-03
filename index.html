@@ -8,15 +8,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="icon" href="images/globe.png" type="image/png" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
-	<script src="https://kit.fontawesome.com/458fe55474.js" crossorigin="anonymous"></script>
 	<title>Hello World</title>
 </head>
 
 <body>
-	<button id="theme-toggle" aria-label="Toggle dark/light theme">
-		<i class="fa-regular fa-moon light-icon"></i>
-		<i class="fa-regular fa-sun dark-icon"></i>
-	</button>
+	<nav class="navbar">
+		<div class="nav-container">
+			<div class="logo">
+				<a href="index.html">Antariksh Singh</a>
+			</div>
+			<ul class="nav-links">
+				<li><a href="what_is_web_development.html">Web Dev</a></li>
+				<li><a href="totally_legitimate_form.html">Form</a></li>
+				<!-- TODO make a showcase website when you have more websites to show and replace song.html with it -->
+				<li><a href="song.html">Showcase</a></li>
+			</ul>
+			<button id="theme-toggle" aria-label="Toggle dark/light theme">
+				<img class="light-icon" src="icons/moon.svg"></img>
+				<img class="dark-icon" src="icons/sun.svg"></img>
+			</button>
+		</div>
+	</nav>
 
 	<header>
 		<h1>Hello World!</h1>
@@ -31,25 +43,13 @@
 
 		<hr />
 
-		<h3>Here's a list of sub-webpages I've made:</h3>
-
-		<ol>
-			<li><a href="what_is_web_development.html" target="_blank" title="What is Web Development ?">
-					What is Web Development ?
-				</a></li>
-			<li><a href="showcase.html" target="_blank" title="Showcase to Give Me Some Sunshine">
-					Give Me Some Sunshine
-				</a></li>
-			<li><a href="formatting_and_symbols.html" target="_blank" title="Formatting & Symbols Notes">
-					Formatting & Symbols
-				</a></li>
-			<li><a href="span_and_div.html" target="_blank" title="Span & Div Notes">
-					Span & Div Elements
-				</a></li>
-			<li><a href="totally_legitimate_form.html" target="_blank" title="Totally Legitimate Form">
-					Totally Legitimate Form; 100% Real (Trust)
-				</a></li>
-		</ol>
+		<section id="about-me">
+			<h3>About Me</h3>
+			<p>Hi there! I'm Antariksh Singh, a web development enthusiast. This is where I'm documenting my journey as
+				I learn and build various web projects.</p>
+			<p>When I'm not coding, I enjoy [your hobbies/interests here]. Feel free to connect with me through any of
+				the social links below!</p>
+		</section>
 
 		<hr />
 
@@ -64,23 +64,23 @@
 		<p>Author: Antariksh Singh</p>
 
 		<a href="https://www.linkedin.com/in/antariksh-singh-37b496315/" target="_blank" title="my linked in">
-			<i class="fa-brands fa-linkedin"></i>
+			<img class="social-icons" src="icons/linkedin.svg"></img>
 		</a>
 
 		<a href="https://www.instagram.com/antarikshsingh.07/" target="_blank" title="my instagram">
-			<i class="fa-brands fa-instagram"></i>
+			<img class="social-icons" src="icons/instagram.svg"></img>
 		</a>
 
 		<a href="https://github.com/Antariksh-Singh-07/" target="_blank" title="my github">
-			<i class="fa-brands fa-github"></i>
+			<img class="social-icons" src="icons/github.svg"></img>
 		</a>
 
 		<a href="https://x.com/AntarikshSingh_/" target="_blank" title="my twitter">
-			<i class="fa-brands fa-x-twitter"></i>
+			<img class="social-icons" src="icons/twitter.svg"></img>
 		</a>
 
 		<a href="mailto:antarikshsingh212@gmail.com" target="_blank" title="my email">
-			<i class="fa-regular fa-envelope"></i>
+			<img class="social-icons" src="icons/at-sign.svg"></img>
 		</a>
 
 		<p>&copy; 2025 Embrace Absurdity Inc.</p>
@@ -89,7 +89,7 @@
 	</footer>
 
 	<button id="scroll-to-top" aria-label="Scroll to top">
-		<i class="fa-regular fa-circle-up"></i>
+		<img class="to_top" src="icons/chevrons-up.svg"></img>
 	</button>
 
 	<script src="script.js"></script>
