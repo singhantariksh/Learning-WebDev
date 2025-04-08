@@ -150,6 +150,11 @@ html.light-theme, html.dark-theme {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  line-height: 1.2;
+}
+
 body{
 	margin: 0px;
 	background-color: var(--background);
