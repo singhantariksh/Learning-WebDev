@@ -8,15 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/globe.png" type="image/png" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script src="https://kit.fontawesome.com/458fe55474.js" crossorigin="anonymous"></script>
     <title>Totally Legitimate Form</title>
 </head>
 
 <body>
-    <button id="theme-toggle" aria-label="Toggle dark/light theme">
-        <i class="fa-regular fa-moon light-icon"></i>
-        <i class="fa-regular fa-sun dark-icon"></i>
-    </button>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="icon-wrapper icon-globe"></div>
+                    <span class="logo-text">Embrace Absurdity</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="what_is_web_development.html">Web Dev</a></li>
+                <li><a href="totally_legitimate_form.html">Form</a></li>
+                <!-- TODO make a showcase website when you have more websites to show and replace song.html with it -->
+                <li><a href="song.html">Showcase</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle dark/light theme">
+                <div class="icon-wrapper icon-moon light-icon"></div>
+                <div class="icon-wrapper icon-sun dark-icon"></div>
+            </button>
+        </div>
+    </nav>
 
     <header>
         <h1>Totally Legitimate Information Collection Form!</h1>
@@ -34,6 +49,24 @@
 
                 <label for="dob">Date of Birth:</label>
                 <input type="date" id="dob" name="dob" required /><br />
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="none" selected disabled hidden>Choose your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="croissant">Croissant</option>
+                    <option value="platypus">Platypus</option>
+                    <option value="mermaid">Mermaid</option>
+                    <option value="merman">Merman</option>
+                    <option value="not_say">Rather Not Say</option>
+                    <option value="other">Other...</option>
+                </select><br />
+
+                <div id="otherInputContainer" style="display: none; margin-top: 10px;">
+                    <label for="other">Please specify:</label>
+                    <input type="text" id="other" name="other" placeholder="Your gender">
+                </div>
 
                 <label for="birthplace">Where were you born?</label>
                 <input type="text" id="birthplace" name="birthplace" required placeholder="South Delhi" /><br />
@@ -72,6 +105,7 @@
                     <option value="none" selected disabled hidden>Choose your Debt Provider</option>
                     <option value="visa">Visa</option>
                     <option value="mastercard">Mastercard</option>
+                    <option value="american_express">American Express</option>
                     <option value="sbi">SBI</option>
                     <option value="hdfc">HDFC</option>
                     <option value="icici">ICICI</option>
@@ -157,6 +191,8 @@
                     <option value="no" selected>Nope, I'm clean (but that's what a criminal would say)</option>
                     <option value="fbi">Yes, by the FBI</option>
                     <option value="cia">Yes, by the CIA</option>
+                    <option value="cid">Yes, by the CID</option>
+                    <option value="cbi">Yes, by the CBI</option>
                     <option value="nsa">Yes, by the NSA</option>
                     <option value="kgb">Yes, by a defunct agency (KGB - respect!)</option>
                     <option value="mi6">Yes, by MI6</option>
@@ -204,8 +240,8 @@
             </fieldset>
 
             <!-- Submission -->
-            <input type="reset" value="Reset" onclick="alert('You\'re Backing Out :c');" />
-            <input type="submit" value="Submit"
+            <input class="btn" type="reset" value="Reset" onclick="alert('You\'re Backing Out :c');" />
+            <input class="btn" type="submit" value="Submit"
                 onclick="alert('Thanks! I\'ll be in touch... or watching... or impersonating? 😈 Maybe don\'t dox yourself next time? 😆');" />
         </form>
     </main>
@@ -215,7 +251,7 @@
     </footer>
 
     <button id="scroll-to-top" aria-label="Scroll to top">
-        <i class="fa-regular fa-circle-up"></i>
+        <div class="icon-wrapper icon-chevrons-up"></div>
     </button>
 
     <script src="script.js"></script>

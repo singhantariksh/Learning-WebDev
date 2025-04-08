@@ -2,10 +2,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const themeToggle = document.getElementById('theme-toggle');
 
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-        document.documentElement.classList.add('dark-theme');
-    } else if (savedTheme === 'light') {
+    if (savedTheme === 'light') {
         document.documentElement.classList.add('light-theme');
+    } else {
+        document.documentElement.classList.add('dark-theme');
+        if (!savedTheme) {
+            localStorage.setItem('theme', 'dark');
+        }
     }
 
     themeToggle.addEventListener('click', function () {
@@ -44,4 +47,17 @@ document.addEventListener('DOMContentLoaded', function () {
             behavior: 'smooth'
         });
     });
+
+    const genderSelect = document.getElementById('gender');
+    const otherInputContainer = document.getElementById('otherInputContainer');
+
+    genderSelect.addEventListener('change', function () {
+        if (this.value === 'other') {
+            otherInputContainer.style.display = 'block';
+        } else {
+            otherInputContainer.style.display = 'none';
+            document.getElementById('other').value = '';
+        }
+    });
 });
+

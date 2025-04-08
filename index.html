@@ -8,15 +8,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="icon" href="images/globe.png" type="image/png" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
-	<script src="https://kit.fontawesome.com/458fe55474.js" crossorigin="anonymous"></script>
 	<title>Hello World</title>
 </head>
 
 <body>
-	<button id="theme-toggle" aria-label="Toggle dark/light theme">
-		<i class="fa-regular fa-moon light-icon"></i>
-		<i class="fa-regular fa-sun dark-icon"></i>
-	</button>
+	<nav class="navbar">
+		<div class="nav-container">
+			<div class="logo">
+				<a href="index.html">
+					<div class="icon-wrapper icon-globe"></div>
+					<span class="logo-text">Embrace Absurdity</span>
+				</a>
+			</div>
+			<ul class="nav-links">
+				<li><a href="what_is_web_development.html">Web Dev</a></li>
+				<li><a href="totally_legitimate_form.html">Form</a></li>
+				<!-- TODO make a showcase website when you have more websites to show and replace song.html with it -->
+				<li><a href="song.html">Showcase</a></li>
+			</ul>
+			<button id="theme-toggle" aria-label="Toggle dark/light theme">
+				<div class="icon-wrapper icon-moon light-icon"></div>
+				<div class="icon-wrapper icon-sun dark-icon"></div>
+			</button>
+		</div>
+	</nav>
 
 	<header>
 		<h1>Hello World!</h1>
@@ -25,63 +40,59 @@
 	<main>
 		<h2>Welcome to my first ever webpage!</h2>
 
-		<p>
-			So Hello everyone, I'm just a guy learning web development whenever I feel like it<br />
-		</p>
-
 		<hr />
 
-		<h3>Here's a list of sub-webpages I've made:</h3>
+		<section id="about-me">
+			<h3>About Me</h3>
 
-		<ol>
-			<li><a href="what_is_web_development.html" target="_blank" title="What is Web Development ?">
-					What is Web Development ?
-				</a></li>
-			<li><a href="showcase.html" target="_blank" title="Showcase to Give Me Some Sunshine">
-					Give Me Some Sunshine
-				</a></li>
-			<li><a href="formatting_and_symbols.html" target="_blank" title="Formatting & Symbols Notes">
-					Formatting & Symbols
-				</a></li>
-			<li><a href="span_and_div.html" target="_blank" title="Span & Div Notes">
-					Span & Div Elements
-				</a></li>
-			<li><a href="totally_legitimate_form.html" target="_blank" title="Totally Legitimate Form">
-					Totally Legitimate Form; 100% Real (Trust)
-				</a></li>
-		</ol>
+			<p>Hi there! I'm Antariksh Singh, a technology enthusiast.
+				I'm just a guy learning web development whenever I feel like it. </p>
+			<p>This is where I'm documenting my journey as I learn and build various web projects.</p>
+
+			<p>I'm currently a student at SSTC, Bhilai, Chhattisgarh, India.
+				I am pursuing a B.Tech in Computer Science and Engineering.</p>
+
+			<p>When I'm not coding, I enjoy Gaming & Music, pretty niché I know.
+				Feel free to connect with me through any of the social links below!</p>
+
+			<p>Thanks for stopping by!</p>
+		</section>
 
 		<hr />
 
 		<a href="https://youtu.be/dQw4w9WgXcQ?si=nzh6Hd6_0nSnSc6Y" target="_blank"
 			title="does nothing suspicious (Not Not Safe For Work)">
-			<button id="rickroll">Click Me</button>
+			<button class="btn" id="rickroll">Click Me</button>
 		</a>
 
 	</main>
 
 	<footer>
+		<br />
 		<p>Author: Antariksh Singh</p>
 
-		<a href="https://www.linkedin.com/in/antariksh-singh-37b496315/" target="_blank" title="my linked in">
-			<i class="fa-brands fa-linkedin"></i>
-		</a>
+		<p>Connect with me:</p>
+		<div class="social-icons-container">
+			<a href="https://www.linkedin.com/in/antariksh-singh-37b496315/" target="_blank" title="my linked in">
+				<div class="icon-wrapper icon-linkedin social-icons"></div>
+			</a>
 
-		<a href="https://www.instagram.com/antarikshsingh.07/" target="_blank" title="my instagram">
-			<i class="fa-brands fa-instagram"></i>
-		</a>
+			<a href="https://www.instagram.com/antarikshsingh.07/" target="_blank" title="my instagram">
+				<div class="icon-wrapper icon-instagram social-icons"></div>
+			</a>
 
-		<a href="https://github.com/Antariksh-Singh-07/" target="_blank" title="my github">
-			<i class="fa-brands fa-github"></i>
-		</a>
+			<a href="https://github.com/Antariksh-Singh-07/" target="_blank" title="my github">
+				<div class="icon-wrapper icon-github social-icons"></div>
+			</a>
 
-		<a href="https://x.com/AntarikshSingh_/" target="_blank" title="my twitter">
-			<i class="fa-brands fa-x-twitter"></i>
-		</a>
+			<a href="https://x.com/AntarikshSingh_/" target="_blank" title="my twitter">
+				<div class="icon-wrapper icon-twitter social-icons"></div>
+			</a>
 
-		<a href="mailto:antarikshsingh212@gmail.com" target="_blank" title="my email">
-			<i class="fa-regular fa-envelope"></i>
-		</a>
+			<a href="mailto:antarikshsingh212@gmail.com" target="_blank" title="my email">
+				<div class="icon-wrapper icon-email social-icons"></div>
+			</a>
+		</div>
 
 		<p>&copy; 2025 Embrace Absurdity Inc.</p>
 
@@ -89,7 +100,7 @@
 	</footer>
 
 	<button id="scroll-to-top" aria-label="Scroll to top">
-		<i class="fa-regular fa-circle-up"></i>
+		<div class="icon-wrapper icon-chevrons-up"></div>
 	</button>
 
 	<script src="script.js"></script>
