@@ -22,6 +22,8 @@ html.light-theme {
   --primary: hsl(204, 77%, 74%);
   --secondary: hsl(204, 57%, 54%);
   --accent: hsl(204, 86%, 14%);
+  --background-translucent: hsla(0, 0%, 80%, 0.1);
+  --shadow: hsla(0, 0%, 10%, 0.1);
 
   --text-50: hsl(199, 62%, 95%);
   --text-100: hsl(199, 61%, 90%);
@@ -32,6 +34,7 @@ html.light-theme {
   --text-600: hsl(199, 61%, 40%);
   --text-700: hsl(199, 61%, 30%);
   --text-800: hsl(199, 61%, 20%);
+  --text-900: hsl(199, 61%, 10%);
 
   --background-50: hsl(197, 54%, 95%);
   --background-100: hsl(199, 57%, 90%);
@@ -42,6 +45,7 @@ html.light-theme {
   --background-600: hsl(198, 55%, 40%);
   --background-700: hsl(198, 56%, 30%);
   --background-800: hsl(198, 55%, 20%);
+  --background-900: hsl(198, 55%, 10%);
 
   --primary-50: hsl(204, 77%, 95%);
   --primary-100: hsl(205, 76%, 90%);
@@ -52,6 +56,7 @@ html.light-theme {
   --primary-600: hsl(204, 77%, 40%);
   --primary-700: hsl(204, 76%, 30%);
   --primary-800: hsl(204, 76%, 20%);
+  --primary-900: hsl(204, 76%, 10%);
 
   --secondary-50: hsl(204, 60%, 95%);
   --secondary-100: hsl(205, 57%, 90%);
@@ -62,6 +67,7 @@ html.light-theme {
   --secondary-600: hsl(204, 57%, 40%);
   --secondary-700: hsl(204, 57%, 30%);
   --secondary-800: hsl(204, 57%, 20%);
+  --secondary-900: hsl(204, 57%, 10%);
 
   --accent-50: hsl(205, 85%, 95%);
   --accent-100: hsl(207, 84%, 90%);
@@ -72,6 +78,7 @@ html.light-theme {
   --accent-600: hsl(206, 86%, 40%);
   --accent-700: hsl(206, 86%, 30%);
   --accent-800: hsl(206, 86%, 20%);
+  --accent-900: hsl(206, 86%, 10%);
 }
 
 html.dark-theme {
@@ -80,6 +87,8 @@ html.dark-theme {
   --primary: hsl(204, 77%, 26%);
   --secondary: hsl(204, 57%, 46%);
   --accent: hsl(204, 86%, 86%);
+  --background-translucent: hsla(0, 0%, 10%, 0.1);
+  --shadow: hsla(0, 0%, 80%, 0.1);
 
   --text-50: hsl(199, 62%, 5%);
   --text-100: hsl(199, 61%, 10%);
@@ -90,6 +99,7 @@ html.dark-theme {
   --text-600: hsl(199, 61%, 60%);
   --text-700: hsl(199, 61%, 70%);
   --text-800: hsl(199, 61%, 80%);
+  --text-900: hsl(199, 61%, 90%);
 
   --background-50: hsl(197, 54%, 5%);
   --background-100: hsl(199, 57%, 10%);
@@ -100,6 +110,7 @@ html.dark-theme {
   --background-600: hsl(198, 55%, 60%);
   --background-700: hsl(198, 56%, 70%);
   --background-800: hsl(198, 55%, 80%);
+  --background-900: hsl(198, 55%, 90%);
 
   --primary-50: hsl(204, 77%, 5%);
   --primary-100: hsl(205, 76%, 10%);
@@ -110,6 +121,7 @@ html.dark-theme {
   --primary-600: hsl(204, 77%, 60%);
   --primary-700: hsl(204, 76%, 70%);
   --primary-800: hsl(204, 76%, 80%);
+  --primary-900: hsl(204, 76%, 90%);
 
   --secondary-50: hsl(204, 60%, 5%);
   --secondary-100: hsl(205, 57%, 10%);
@@ -120,6 +132,7 @@ html.dark-theme {
   --secondary-600: hsl(204, 57%, 60%);
   --secondary-700: hsl(204, 57%, 70%);
   --secondary-800: hsl(204, 57%, 80%);
+  --secondary-900: hsl(204, 57%, 90%);
 
   --accent-50: hsl(207, 85%, 5%);
   --accent-100: hsl(207, 84%, 10%);
@@ -130,6 +143,7 @@ html.dark-theme {
   --accent-600: hsl(206, 86%, 60%);
   --accent-700: hsl(206, 86%, 70%);
   --accent-800: hsl(206, 86%, 80%);
+  --accent-900: hsl(206, 86%, 90%);
 }
 
 html.light-theme, html.dark-theme {
@@ -138,6 +152,8 @@ html.light-theme, html.dark-theme {
               --primary 0.3s ease,
               --secondary 0.3s ease,
               --accent 0.3s ease;
+              --background-translucent 0.3s ease,
+              --shadow 0.3s ease;
 }
 
 /* =======================================
@@ -152,7 +168,6 @@ html.light-theme, html.dark-theme {
 
 html {
   scroll-behavior: smooth;
-  line-height: 1.2;
 }
 
 body{
@@ -175,9 +190,16 @@ h1, h2, h3, h4, h5, h6, legend, nav {
 	font-weight: 700;
 }
 
-p, label, input, select, textarea, button{
-	font-family: Gotu, Arial;
-	font-weight: 400;
+p, label, input, select, textarea, button, i, ul, ol, li, table, td, th, dl, dt, dd, blockquote, span, em, strong, small, article, section {
+    font-family: Gotu, Arial;
+    font-weight: 400;
+}
+
+code, pre, kbd {
+  font-family: monospace;
+  background-color: var(--background-100);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -203,6 +225,26 @@ h5 {font-size: 1.250rem;}
 
 small {font-size: 0.800rem;}
 
+html {
+  line-height: 1.4;
+}
+
+body {
+  line-height: 1.4;
+}
+
+p, li, blockquote, label {
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+h4, h5, h6 {
+  letter-spacing: -0.01em;
+}
+
 /* =======================================
    LAYOUT
    ======================================= */
@@ -219,6 +261,33 @@ footer {
 	margin: 1rem 0rem;
 	padding: 0rem 1rem;
 	border-top: 2px solid;
+}
+
+/* Footer Column Style */
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.footer-note {
+  font-size: 0.85rem;
+  color: var(--text-900);
 }
 
 main > * + * {
@@ -270,7 +339,7 @@ a:active {
   position: fixed;
   top: 0.7rem;
   right: 1rem;
-  background-color: var(--primary);
+  background-color: var(--primary-100);
   color: var(--text);
   border: 2px solid var(--accent);
   border-radius: 50%;
@@ -284,12 +353,12 @@ a:active {
 }
 
 #theme-toggle:hover {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   transform: scale(1.1);
 }
 
 #theme-toggle:active {
-  background-color: var(--primary);
+  background-color: var(--primary-200);
   transform: scale(1.05);
 }
 
@@ -299,7 +368,7 @@ a:active {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-  background-color: var(--primary);
+  background-color: var(--primary-100);
   color: var(--text);
   border: 2px solid var(--accent);
   border-radius: 50%;
@@ -321,20 +390,22 @@ a:active {
 }
 
 #scroll-to-top:hover {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   transform: scale(1.1);
 }
 
 #scroll-to-top:active {
-  background-color: var(--primary);
+  background-color: var(--primary-200);
   transform: scale(1.05);
 }
 
+/* --- Buttons --- */
+
 .btn {
-  background-color: var(--primary);
+  background-color: var(--primary-100);
   color: var(--text);
   border: 3px solid var(--accent);
-  background: none;
+  box-shadow: 0 8px 10px var(--shadow);
   border-radius: 5px;
   cursor: pointer;
   margin: 0px 10px;
@@ -342,12 +413,14 @@ a:active {
 }
 
 .btn:hover {
-  background-color: var(--secondary);
+  background-color: var(--primary);
+  box-shadow: 0 10px 12px var(--shadow);
   transform: scale(1.1);
 }
 
 .btn:active {
-  background-color: var(--primary);
+  background-color: var(--primary-200);
+  box-shadow: 0 6px 8px var(--shadow);
   transform: scale(1.05);
 }
 
@@ -370,10 +443,10 @@ main a:has(#rickroll) {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: hsla(0, 0%, 100%, 0.1);
+  background-color: var(--background-translucent);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0 4px 6px var(--shadow);
 }
 
 .nav-container {
@@ -413,12 +486,19 @@ main a:has(#rickroll) {
   text-decoration: underline;
 }
 
-/* Dark mode adjustments for navbar */
+/* --- Section --- */
 
-html.dark-theme .navbar {
-  background-color: hsla(0, 0%, 10%, .3);
-  box-shadow: 0 4px 6px hsla(0, 0%, 80%, 0.1);
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* --- Fieldset --- */
 
@@ -473,6 +553,82 @@ input[type="color"]{
 
 [id] {
   scroll-margin-top: 5rem;
+}
+
+
+/* --- Timeline Style ---*/
+
+.snake-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline-connector {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: var(--primary);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+}
+
+.timeline-right {
+  justify-content: flex-start;
+  padding-left: calc(50% + 30px);
+}
+
+.timeline-left {
+  justify-content: flex-end;
+  padding-right: calc(50% + 30px);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.timeline-content {
+  background-color: var(--background-translucent);
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow);
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 10px var(--shadow);
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.date {
+  display: inline-block;
+  padding: 3px 10px;
+  background-color: var(--secondary);
+  border-radius: 4px;
+  font-size: 1.2rem;
+  margin-top: 5px;
 }
 
 /* --- Icons --- */
@@ -576,6 +732,10 @@ fieldset, hr, #theme-toggle, #scroll-to-top {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
+a:not(.btn):not(#theme-toggle):not(#scroll-to-top) {
+  transition: none;
+}
+
 main, p, h1, h2, h3, h4, h5, h6, ul, ol, li, div {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
@@ -583,6 +743,34 @@ main, p, h1, h2, h3, h4, h5, h6, ul, ol, li, div {
 /* =======================================
    MEDIA QUERIES
    ======================================= */
+
+@media (max-width: 768px) {
+
+  /* --- Footer Column Style --- */
+
+  .footer-container {
+      flex-direction: column;
+  }
+
+  .footer-column {
+      margin-bottom: 2rem;
+  }
+
+  /* --- Timeline Style --- */
+
+  .timeline-right, .timeline-left {
+    padding-left: 70px;
+    justify-content: flex-start;
+  }
+
+  .timeline-connector {
+    left: 30px;
+  }
+
+  .timeline-dot {
+    left: 30px;
+  }
+}
 
 /* =======================================
    ANIMATIONS
