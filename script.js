@@ -93,18 +93,33 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Calculate and display reading time
-    calculateReadingTime();
+    if (document.getElementById('article-content')) {
+        calculateReadingTime();
+    }
+
+    // if (document.querySelector('.web-dev-guide')) {
+    //     calculateReadingTime('.web-dev-guide', '.dev-guide-reading-time');
+    // }
 });
 
-function calculateReadingTime() {
-    const articleContent = document.getElementById('article-content');
-    const readingTimeElement = document.getElementById('reading-time');
+function calculateReadingTime(contentSelector = '#article-content', displaySelector = '#reading-time') {
+    const articleContent = document.querySelector(contentSelector);
+    const readingTimeElement = document.querySelector(displaySelector);
 
     if (articleContent && readingTimeElement) {
         const text = articleContent.innerText;
         const wordCount = text.split(/\s+/).length;
-        const readingTime = Math.ceil(wordCount / 238); // Avg reading speed
 
-        readingTimeElement.innerText = `${readingTime} est. read`;
+        // Calculate total seconds based on average reading speed (238 words per minute)
+        const totalSeconds = Math.round((wordCount / 238) * 60);
+
+        // Extract minutes and seconds
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = totalSeconds % 60;
+
+        // Format as M:SS with padding for seconds if needed
+        const formattedTime = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+
+        readingTimeElement.innerText = `${wordCount} Words & ${formattedTime} est. read`;
     }
 }

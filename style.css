@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6, legend, nav {
 	font-weight: 700;
 }
 
-p, label, input, select, textarea, button, i, ul, ol, li, table, td, th, dl, dt, dd, blockquote, span, em, strong, small, article, section {
+p, label, input, select, textarea, button, i, ul, ol, li, table, td, th, dl, dt, dd, blockquote, span, em, strong, small, article, section, div {
     font-family: Gotu, Arial;
     font-weight: 400;
 }
@@ -629,6 +629,20 @@ input[type="color"]{
   border-radius: 4px;
   font-size: 1.2rem;
   margin-top: 5px;
+}
+
+/* Reading Time */
+
+.reading-time-badge {
+  display: inline-block;
+  background-color: var(--primary-100);
+  color: var(--text);
+  border: 2px solid var(--accent);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin: 1rem;
+  float: right;
 }
 
 /* --- Icons --- */
