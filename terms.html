@@ -12,10 +12,25 @@
 </head>
 
 <body>
-    <button id="theme-toggle" aria-label="Toggle dark/light theme">
-        <div class="icon-wrapper icon-moon light-icon"></div>
-        <img class="dark-icon" src="icons/sun.svg"></img>
-    </button>
+	<nav class="navbar">
+		<div class="nav-container">
+			<div class="logo">
+				<a href="index.html">
+					<div class="icon-wrapper icon-globe"></div>
+					<span class="logo-text">Embrace Absurdity</span>
+				</a>
+			</div>
+			<ul class="nav-links">
+				<li><a href="what_is_web_development.html">Web Dev</a></li>
+				<li><a href="totally_legitimate_form.html">Form</a></li>
+				<li><a href="showcase.html">Showcase</a></li>
+			</ul>
+			<button id="theme-toggle" aria-label="Toggle dark/light theme">
+				<div class="icon-wrapper icon-moon light-icon"></div>
+				<div class="icon-wrapper icon-sun dark-icon"></div>
+			</button>
+		</div>
+	</nav>
 
     <header>
         <h1>Terms and Conditions</h1>
@@ -27,9 +42,9 @@
             <li>You are willingly sharing personal information that may (or may not) be used for top-secret
                 impersonation
                 missions.</li>
-            <li>All data you provide is accepted with a pinch of humor, a dash of irony, and a generous serving of “what
+            <li>All data you provide is accepted with a pinch of humor, a dash of irony, and a generous serving of "what
                 the
-                FUCK?”</li>
+                FUCK?"</li>
             <li>We promise not to sell your data to extraterrestrial beings—unless they offer us cosmic coupons.</li>
             <li>Any resemblance to actual legal terms is purely coincidental. We're here to have fun, not to lawyer up.
             </li>
@@ -41,9 +56,46 @@
         <p style="text-align: center;">&copy; 2025 Embrace Absurdity Inc. All rights reserved (and then some).</p>
     </main>
 
-    <footer>
+	<footer>
+		<div class="footer-container">
+			<div class="footer-column">
+				<h4>About</h4>
+				<p>Author: Antariksh Singh</p>
+				<p class="footer-note">&copy; 2025 Embrace Absurdity Inc.</p>
+				<p class="footer-note">All rights reserved.</p>
+				<p id="last-updated" class="footer-note"></p>
+			</div>
 
-    </footer>
+			<div class="footer-column">
+				<h4>Connect with me</h4>
+				<div class="social-icons-container" id="socials">
+					<a href="https://www.linkedin.com/in/antariksh-singh-37b496315/" target="_blank" title="my linked in">
+						<div class="icon-wrapper icon-linkedin social-icons"></div>
+					</a>
+					<a href="https://github.com/Antariksh-Singh-07/" target="_blank" title="my github">
+						<div class="icon-wrapper icon-github social-icons"></div>
+					</a>
+					<a href="https://www.instagram.com/antarikshsingh.07/" target="_blank" title="my instagram">
+						<div class="icon-wrapper icon-instagram social-icons"></div>
+					</a>
+					<a href="https://x.com/AntarikshSingh_/" target="_blank" title="my twitter">
+						<div class="icon-wrapper icon-twitter social-icons"></div>
+					</a>
+					<a href="mailto:antarikshsingh212@gmail.com" target="_blank" title="my email">
+						<div class="icon-wrapper icon-email social-icons"></div>
+					</a>
+				</div>
+				<p class="footer-note">Feel free to reach out if you have any feedback or suggestions!</p>
+			</div>
+
+			<div class="footer-column">
+				<h4>Miscellaneous</h4>
+				<p>Thanks for visiting!</p>
+				<p class="footer-note">Disclaimer: This is a personal project and not affiliated with any organization</p>
+				<p class="footer-note">Note: This website is a work in progress and may contain bugs or incomplete features</p>
+			</div>
+		</div>
+	</footer>
 
     <button id="scroll-to-top" aria-label="Scroll to top">
         <div class="icon-wrapper icon-chevrons-up"></div>
