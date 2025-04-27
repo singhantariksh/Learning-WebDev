@@ -4,12 +4,12 @@
 
 @font-face {
 	font-family: League-Spartan;
-	src: url('fonts/LeagueSpartan-Variable.ttf');
+	src: url('/fonts/LeagueSpartan-Variable.ttf');
 }
 
 @font-face {
 	font-family: Gotu;
-	src: url('fonts/Gotu.ttf');
+	src: url('/fonts/Gotu.ttf');
 }
 
 /* =======================================
@@ -645,48 +645,48 @@ input[type="color"]{
 }
 
 .icon-moon {
-  mask-image: url('icons/moon.svg');
-  -webkit-mask-image: url('icons/moon.svg');
+  mask-image: url('/css/icons/moon.svg');
+  -webkit-mask-image: url('/css/icons/moon.svg');
 }
 
 .icon-sun {
-  mask-image: url('icons/sun.svg');
-  -webkit-mask-image: url('icons/sun.svg');
+  mask-image: url('/css/icons/sun.svg');
+  -webkit-mask-image: url('/css/icons/sun.svg');
 }
 
 .icon-linkedin {
-  mask-image: url('icons/linkedin.svg');
-  -webkit-mask-image: url('icons/linkedin.svg');
+  mask-image: url('/css/icons/linkedin.svg');
+  -webkit-mask-image: url('/css/icons/linkedin.svg');
 }
 
 .icon-instagram {
-  mask-image: url('icons/instagram.svg');
-  -webkit-mask-image: url('icons/instagram.svg');
+  mask-image: url('/css/icons/instagram.svg');
+  -webkit-mask-image: url('/css/icons/instagram.svg');
 }
 
 .icon-github {
-  mask-image: url('icons/github.svg');
-  -webkit-mask-image: url('icons/github.svg');
+  mask-image: url('/css/icons/github.svg');
+  -webkit-mask-image: url('/css/icons/github.svg');
 }
 
 .icon-twitter {
-  mask-image: url('icons/twitter.svg');
-  -webkit-mask-image: url('icons/twitter.svg');
+  mask-image: url('/css/icons/twitter.svg');
+  -webkit-mask-image: url('/css/icons/twitter.svg');
 }
 
 .icon-email {
-  mask-image: url('icons/at-sign.svg');
-  -webkit-mask-image: url('icons/at-sign.svg');
+  mask-image: url('/css/icons/at-sign.svg');
+  -webkit-mask-image: url('/css/icons/at-sign.svg');
 }
 
 .icon-chevrons-up {
-  mask-image: url('icons/chevrons-up.svg');
-  -webkit-mask-image: url('icons/chevrons-up.svg');
+  mask-image: url('/css/icons/chevrons-up.svg');
+  -webkit-mask-image: url('/css/icons/chevrons-up.svg');
 }
 
 .icon-globe {
-  mask-image: url('icons/globe.svg');
-  -webkit-mask-image: url('icons/globe.svg');
+  mask-image: url('/css/icons/globe.svg');
+  -webkit-mask-image: url('/css/icons/globe.svg');
 }
 
 /* Common mask properties for all icons */
@@ -705,7 +705,7 @@ html:not(.dark-theme) .dark-icon {
   display: none;
 }
 
-.social-icons{
+social-icons{
   width: 1.5rem;
   height: 1.5rem;
 }
