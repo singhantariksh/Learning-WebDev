@@ -8,7 +8,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="page-title" content="Hello World!" />
 	<link rel="icon" href="images/globe.png" type="image/png" />
+	<link rel="stylesheet" href="css/base-style.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<title>Hello World</title>
 </head>
 
@@ -24,13 +26,15 @@
 			<ul class="nav-links">
 				<li><a href="html/what_is_web_development.html">Web Dev</a></li>
 				<li><a href="html/totally_legitimate_form.html">Form</a></li>
-				<li><a href="html/showcase.html">Showcase</a></li>
+				<li><a href="html/showcase.html">Displays</a></li>
 				<!-- TODO make the showcase have an hover effect to show all the seperate websites directly accessible -->
+				<div>
+					<button id="theme-toggle" aria-label="Toggle dark/light theme">
+					<div class="icon-wrapper icon-moon light-icon"></div>
+					<div class="icon-wrapper icon-sun dark-icon"></div>
+					</button>
+				</div>
 			</ul>
-			<button id="theme-toggle" aria-label="Toggle dark/light theme">
-				<div class="icon-wrapper icon-moon light-icon"></div>
-				<div class="icon-wrapper icon-sun dark-icon"></div>
-			</button>
 		</div>
 	</nav>
 

@@ -160,18 +160,7 @@ html.light-theme, html.dark-theme {
    RESET / BASE STYLES
    ======================================= */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body{
-	margin: 0px;
 	background-color: var(--background);
 	color: var(--text);
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -211,21 +200,8 @@ p {
   margin-bottom: 0.75rem;
 }
 
-html {font-size: 120%;}
-
-h1 {font-size: 3.053rem;}
-
-h2 {font-size: 2.442rem;}
-
-h3 {font-size: 1.954rem;}
-
-h4 {font-size: 1.563rem;}
-
-h5 {font-size: 1.250rem;}
-
-small {font-size: 0.800rem;}
-
 html {
+  font-size: 100%;
   line-height: 1.4;
 }
 
@@ -630,7 +606,6 @@ input[type="color"]{
   padding: 3px 10px;
   background-color: var(--secondary);
   border-radius: 4px;
-  font-size: 1.2rem;
   margin-top: 5px;
 }
 
@@ -733,16 +708,8 @@ social-icons{
 }
 
 /* =======================================
-   UTILITIES
+   ANIMATIONS & TRANSITIONS
    ======================================= */
-
-.center {
-	text-align: center;
-}
-
-.hidden {
-	visibility: hidden;
-}
 
 a, button, input, textarea, select, header, footer,
 fieldset, hr, #theme-toggle, #scroll-to-top {
@@ -756,43 +723,3 @@ a:not(.btn):not(#theme-toggle):not(#scroll-to-top) {
 main, p, h1, h2, h3, h4, h5, h6, ul, ol, li, div {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
-
-/* =======================================
-   MEDIA QUERIES
-   ======================================= */
-
-@media (max-width: 768px) {
-
-  /* --- Footer Column Style --- */
-
-  .footer-container {
-      flex-direction: column;
-  }
-
-  .footer-column {
-      margin-bottom: 2rem;
-  }
-
-  /* --- Timeline Style --- */
-
-  .timeline-right, .timeline-left {
-    padding-left: 70px;
-    justify-content: flex-start;
-  }
-
-  .timeline-connector {
-    left: 30px;
-  }
-
-  .timeline-dot {
-    left: 30px;
-  }
-}
-
-/* =======================================
-   ANIMATIONS
-   ======================================= */
-
-/* =======================================
-   PRINT STYLES
-   ======================================= */
