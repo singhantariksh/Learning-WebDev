@@ -52,6 +52,19 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Smart Navbar functionality
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+        navbar.classList.add('scrolled');
+        navbar.classList.remove('top');
+    } else {
+        navbar.classList.add('top');
+        navbar.classList.remove('scrolled');
+    }
+    });
+    window.dispatchEvent(new Event('scroll'));
+
     // Gender select functionality
     const genderSelect = document.getElementById('gender');
     const otherInputContainer = document.getElementById('otherInputContainer');

@@ -430,6 +430,21 @@ main a:has(#rickroll) {
   left: 0;
   width: 100%;
   z-index: 1000;
+  background-color: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  transition: all 0.3s ease;
+}
+
+.navbar.top {
+  background-color: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.navbar.scrolled {
   background-color: var(--background-translucent);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
