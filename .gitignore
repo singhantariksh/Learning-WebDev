@@ -1,2 +1,11 @@
+# editor specific file
+.vscode/
+
+#test files
 test.*
-*.md
+
+#node dependencies
+node_modules/
+
+#source map files
+*.map

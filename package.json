@@ -1,0 +1,25 @@
+{
+  "name": "web-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc",
+    "dev:watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/singhantariksh/Learning-WebDev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/singhantariksh/Learning-WebDev/issues"
+  },
+  "homepage": "https://github.com/singhantariksh/Learning-WebDev#readme",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

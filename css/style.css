@@ -512,6 +512,10 @@ input[type="color"]{
 	background: none;
 }
 
+#otherInputContainer {
+  display: none;
+}
+
 /* --- Table of Contents --- */
 
 .toc {
